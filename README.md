@@ -1,4 +1,4 @@
-# Digital-VLSI-SoC-Design-and-Planning
+﻿# Digital-VLSI-SoC-Design-and-Planning
 Notes Summarized for the Workshop held between 18th June and 1st July 2025
 ## Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK
 ### How to talk to computers
@@ -63,41 +63,41 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
 2. Lab steps to characterize inverter using sky130 model files
 3. Lab introduction to Magic tool options and DRC rules
 4. Lab introduction to Sky130 pdk's and steps to download labs
-Lab introduction to Magic and steps to load Sky130 tech-rules
-Lab exercise to fix poly.9 error in Sky130 tech-file
-Lab exercise to implement poly resistor spacing to diff and tap
-Lab challenge exercise to describe DRC error as geometrical construct
-Lab challenge to find missing or incorrect rules and fix them
+5. Lab introduction to Magic and steps to load Sky130 tech-rules
+6. Lab exercise to fix poly.9 error in Sky130 tech-file
+7. Lab exercise to implement poly resistor spacing to diff and tap
+8. Lab challenge exercise to describe DRC error as geometrical construct
+9. Lab challenge to find missing or incorrect rules and fix them
 ## Day 4 - Pre-layout timing analysis and importance of good clock tree
-Timing modeling using delay tables
-Lab steps to convert grid info to track info
-Lab steps to convert magic layout to std cell LEF
-Introduction to timing libs and steps to include new cell in synthesis
-Introduction to delay tables
-Delay table usage Part 1
-Delay table usage Part 2
-Lab steps to configure synthesis settings to fix slack and include vsdinv
-Timing analysis with ideal clocks using openSTA
-Setup timing analysis and introduction to flip-flop setup time
-Introduction to clock jitter and uncertainty
-Lab steps to configure OpenSTA for post-synth timing analysis
-Lab steps to optimize synthesis to reduce setup violations
-Lab steps to do basic timing ECO
-Clock tree synthesis TritonCTS and signal integrity
-Clock tree routing and buffering using H-Tree algorithm
-Crosstalk and clock net shielding
-Lab steps to run CTS using TritonCTS
-Lab steps to verify CTS runs
-Timing analysis with real clock using openSTA
-Setup timing analysis using real clocks
-Hold timing analysis using real clocks
-Lab steps to analyze timing with real clocks using OpenSTA
-Lab steps to execute OpenSTA with right timing libraries and CTS assignment
-Lab steps to observe impact of bigger CTS buffers on setup and hold timing
+### Timing modeling using delay tables
+1. Lab steps to convert grid info to track info
+2. Lab steps to convert magic layout to std cell LEF
+3. Introduction to timing libs and steps to include new cell in synthesis
+4. Introduction to delay tables
+5. Delay table usage Part 1
+6. Delay table usage Part 2
+7. Lab steps to configure synthesis settings to fix slack and include vsdinv
+### Timing analysis with ideal clocks using openSTA
+1. Setup timing analysis and introduction to flip-flop setup time
+2. Introduction to clock jitter and uncertainty
+3. Lab steps to configure OpenSTA for post-synth timing analysis
+4. Lab steps to optimize synthesis to reduce setup violations
+5. Lab steps to do basic timing ECO
+### Clock tree synthesis TritonCTS and signal integrity
+1. Clock tree routing and buffering using H-Tree algorithm
+2. Crosstalk and clock net shielding
+3. Lab steps to run CTS using TritonCTS
+4. Lab steps to verify CTS runs
+### Timing analysis with real clock using openSTA
+1. Setup timing analysis using real clocks
+2. Hold timing analysis using real clocks
+3. Lab steps to analyze timing with real clocks using OpenSTA
+4. Lab steps to execute OpenSTA with right timing libraries and CTS assignment
+5. Lab steps to observe impact of bigger CTS buffers on setup and hold timing
 ## Day 5 -Final step for RTL2GDS using tritinRoute and openSTA
 Routing and design rule check (DRC)
-Introduction to Maze Routing Ã�Â� LeeÃ�Â�s algorithm
-LeeÃ�Â�s Algorithm conclusion
+Introduction to Maze Routing Ã Â  LeeÃ Â s algorithm
+LeeÃ Â s Algorithm conclusion
 Design Rule Check
 Power Distribution Network and routing
 Lab steps to build power distribution network
