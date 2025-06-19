@@ -121,8 +121,13 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
 ![2](./Images/2.png)
 The above image shows different components of the microcontroller board having different SDRAM memories, JTAG, and UART protocols along with SoC/Processor.
 
- Chip components:
-  1. Pads: Through which we can send the signal inside the chip.
-  2. Core: Place where all the logic gates are fixed.
-  3. Die: Present at the corner. It is the size of the entire chip.
+ 
 ![3](./Images/3.png)
+The above image shows different I/O ports associated with the QFN package.
+![4](./Images/4.png)
+The above image shows that different I/O ports associated with the QFN package are wire bonded to the Chip.
+![5](./Images/5.png)
+Chip components:
+  1. Pads: Through which we can send the signal inside the chip I/O port are made here.
+  2. Core: Place where all the logic blocks are placed.
+  3. Die: the chip is placed in this physcial area which is utilized based on the requirements.
