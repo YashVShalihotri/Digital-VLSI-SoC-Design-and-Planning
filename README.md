@@ -95,18 +95,18 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
 4. Lab steps to execute OpenSTA with right timing libraries and CTS assignment
 5. Lab steps to observe impact of bigger CTS buffers on setup and hold timing
 ## Day 5 -Final step for RTL2GDS using tritinRoute and openSTA
-Routing and design rule check (DRC)
-Introduction to Maze Routing Ã Â  LeeÃ Â s algorithm
-LeeÃ Â s Algorithm conclusion
-Design Rule Check
-Power Distribution Network and routing
-Lab steps to build power distribution network
-Lab steps from power straps to std cell power
-Basics of global and detail routing and configure TritonRoute
-TritonRoute Features
-TritonRoute feature 1 - Honors pre-processed route guides
-TritonRoute Feature2 & 3 - Inter-guide connectivity and intra- & inter-layer routing
-TritonRoute method to handle connectivity
-Routing topology algorithm and final files list post-route
+### Routing and design rule check (DRC)
+1. Introduction to Maze Routing-Lee’s algorithm
+2. Lee’s Algorithm conclusion
+3. Design Rule Check
+### Power Distribution Network and routing
+1. Lab steps to build power distribution network
+2. Lab steps from power straps to std cell power
+3. Basics of global and detail routing and configure TritonRoute
+### TritonRoute Features
+1. TritonRoute feature 1 - Honors pre-processed route guides
+2. TritonRoute Feature2 & 3 - Inter-guide connectivity and intra- & inter-layer routing
+3. TritonRoute method to handle connectivity
+4. Routing topology algorithm and final files list post-route
 References
 Acknowledgement
