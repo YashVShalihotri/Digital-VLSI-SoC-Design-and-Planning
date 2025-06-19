@@ -6,63 +6,63 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
 2. Introduction to RISC-V
 3. From Software Applications to Hardware
 ### Soc design and OpenLANE
-1.Introduction to all components of open-source digital asic design
-2.Simplified RTL2GDS flow
-3.Introduction to OpenLANE and Strive chipsets
-4.Introduction to OpenLANE detailed ASIC design flow
+1. Introduction to all components of open-source digital asic design
+2. Simplified RTL2GDS flow
+3. Introduction to OpenLANE and Strive chipsets
+4. Introduction to OpenLANE detailed ASIC design flow
 ### Get familiar to open-source EDA tools
-1.OpenLANE Directory structure in detail
-2.Design Preparation Step
-3.Review files after design prep and run synthesis
-4.OpenLANE Project Git Link Description
-5.Steps to characterize synthesis results
+1. OpenLANE Directory structure in detail
+2. Design Preparation Step
+3. Review files after design prep and run synthesis
+4. OpenLANE Project Git Link Description
+5. Steps to characterize synthesis results
 ## Day 2 - Good floor planning considerations
 ### Chip Floor planning consideration
-1.Utilization factor and aspect ratio
-2.Concept of pre-placed cells
-3.De-coupling capacitors
-4.Power planning
-5.Pin placement and logical cell placement blockage
-6.Steps to run floorplan using OpenLANE
-7.Review floorplan files and steps to view floorplan/a>
-8.Review floorplan layout in Magic
+1. Utilization factor and aspect ratio
+2. Concept of pre-placed cells
+3. De-coupling capacitors
+4. Power planning
+5. Pin placement and logical cell placement blockage
+6. Steps to run floorplan using OpenLANE
+7. Review floorplan files and steps to view floorplan/a>
+8. Review floorplan layout in Magic
 ### Library building and Placement
-Netlist binding and initial place design
-Optimize placement using estimated wire-length and capacitance
-Final placement optimization
-Need for libraries and characterization
-Congestion aware placement using RePlAce
+1. Netlist binding and initial place design
+2. Optimize placement using estimated wire-length and capacitance
+3. Final placement optimization
+4. Need for libraries and characterization
+5. Congestion aware placement using RePlAce
 ### Cell design and characterization flows
-1.Inputs for cell design flow
-2.Circuit design steps
-3.Layout design step
-4.Typical characterization flow
+1. Inputs for cell design flow
+2. Circuit design steps
+3. Layout design step
+4. Typical characterization flow
 ### General timing characterization parameters
-1.Timing threshold definitions
-2.Propagation delay and transition time
+1. Timing threshold definitions
+2. Propagation delay and transition time
 ## Day 3 - Design library cell using Magic Layout and ngspice characterization
-Labs for CMOS inverter ngspice simulations
-IO placer revision
-SPICE deck creation for CMOS inverter
-SPICE simulation lab for CMOS inverter
-Switching Threshold Vm
-Static and dynamic simulation of CMOS inverter
-Lab steps to git clone vsdstdcelldesign
-Inception of layout ̂A CMOS faabrication process
-Create Active regions
-Formation of N-well and P-well
-Formation of gate terminal
-Lightly doped drain (LDD) formation
-Source Ã�Â� drain formation
-Local interconnect formation
-Higher level metal formation
-Lab introduction to Sky130 basic layers layout and LEF using inverter
-Lab steps to create std cell layout and extract spice netlist
-Sky130 Tech File Labs
-Lab steps to create final SPICE deck using Sky130 tech
-Lab steps to characterize inverter using sky130 model files
-Lab introduction to Magic tool options and DRC rules
-Lab introduction to Sky130 pdk's and steps to download labs
+### Labs for CMOS inverter ngspice simulations
+1. IO placer revision
+2. SPICE deck creation for CMOS inverter
+3. SPICE simulation lab for CMOS inverter
+4. Switching Threshold Vm
+5. Static and dynamic simulation of CMOS inverter
+6. Lab steps to git clone vsdstdcelldesign
+### Inception of layout ̂A CMOS fabrication process
+1. Create Active regions
+2. Formation of N-well and P-well
+3. Formation of gate terminal
+4. Lightly doped drain (LDD) formation
+5. Source-drain formation
+6. Local interconnect formation
+7. Higher level metal formation
+8. Lab introduction to Sky130 basic layers layout and LEF using inverter
+9. Lab steps to create std cell layout and extract spice netlist
+### Sky130 Tech File Labs
+1. Lab steps to create final SPICE deck using Sky130 tech
+2. Lab steps to characterize inverter using sky130 model files
+3. Lab introduction to Magic tool options and DRC rules
+4. Lab introduction to Sky130 pdk's and steps to download labs
 Lab introduction to Magic and steps to load Sky130 tech-rules
 Lab exercise to fix poly.9 error in Sky130 tech-file
 Lab exercise to implement poly resistor spacing to diff and tap
