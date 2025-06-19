@@ -117,9 +117,9 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
 ![1](./Images/1.png)
   This is an Arduino Uno board, which is a microcontroller as it features a microprocessor, memory, and other Ports for input and output. The chip encircled by a yellow circle is called a processor.
   The design of this chip from the abstract level down to the fabrication is done by RTL to GDSll flow.
-![1](./Images/9.png)
+
   Chip components:
   1. Pads: Through which we can send the signal inside the chip.
   2. Core: Place where all the logic gates are fixed.
   3. Die: Present at the corner. It is the size of the entire chip.
-
+![2](./Images/9.png)
