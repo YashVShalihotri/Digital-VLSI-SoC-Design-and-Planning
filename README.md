@@ -2,44 +2,44 @@
 Notes Summarized for the Workshop held between 18th June and 1st July 2025
 ## Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK
 ### How to talk to computers
-1. Introduction to QFN-48 Package, chip, pads, core, die and IPs
+Introduction to QFN-48 Package, chip, pads, core, die and IPs
 2. Introduction to RISC-V
 3. From Software Applications to Hardware
-Soc design and OpenLANE
-Introduction to all components of open-source digital asic design
-Simplified RTL2GDS flow
-Introduction to OpenLANE and Strive chipsets
-Introduction to OpenLANE detailed ASIC design flow
-Get familiar to open-source EDA tools
-OpenLANE Directory structure in detail
-Design Preparation Step
-Review files after design prep and run synthesis
-OpenLANE Project Git Link Description
-Steps to characterize synthesis results
+### Soc design and OpenLANE
+1.Introduction to all components of open-source digital asic design
+2.Simplified RTL2GDS flow
+3.Introduction to OpenLANE and Strive chipsets
+4.Introduction to OpenLANE detailed ASIC design flow
+### Get familiar to open-source EDA tools
+1.OpenLANE Directory structure in detail
+2.Design Preparation Step
+3.Review files after design prep and run synthesis
+4.OpenLANE Project Git Link Description
+5.Steps to characterize synthesis results
 ## Day 2 - Good floor planning considerations
-Chip Floor planning consideration
-Utilization factor and aspect ratio
-Concept of pre-placed cells
-De-coupling capacitors
-Power planning
-Pin placement and logical cell placement blockage
-Steps to run floorplan using OpenLANE
-Review floorplan files and steps to view floorplan/a>
-Review floorplan layout in Magic
-Library building and Placement
+### Chip Floor planning consideration
+1.Utilization factor and aspect ratio
+2.Concept of pre-placed cells
+3.De-coupling capacitors
+4.Power planning
+5.Pin placement and logical cell placement blockage
+6.Steps to run floorplan using OpenLANE
+7.Review floorplan files and steps to view floorplan/a>
+8.Review floorplan layout in Magic
+### Library building and Placement
 Netlist binding and initial place design
 Optimize placement using estimated wire-length and capacitance
 Final placement optimization
 Need for libraries and characterization
 Congestion aware placement using RePlAce
-Cell design and characterization flows
-Inputs for cell design flow
-Circuit design steps
-Layout design step
-Typical characterization flow
-General timing characterization parameters
-Timing threshold definitions
-Propagation delay and transition time
+### Cell design and characterization flows
+1.Inputs for cell design flow
+2.Circuit design steps
+3.Layout design step
+4.Typical characterization flow
+### General timing characterization parameters
+1.Timing threshold definitions
+2.Propagation delay and transition time
 ## Day 3 - Design library cell using Magic Layout and ngspice characterization
 Labs for CMOS inverter ngspice simulations
 IO placer revision
