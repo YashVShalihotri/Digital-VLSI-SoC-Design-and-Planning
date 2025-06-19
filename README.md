@@ -108,5 +108,9 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
 2. TritonRoute Feature2 & 3 - Inter-guide connectivity and intra- & inter-layer routing
 3. TritonRoute method to handle connectivity
 4. Routing topology algorithm and final files list post-route
-References
-Acknowledgement
+## References
+## Acknowledgement
+
+## Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK
+### How to talk to computers
+1. Introduction to QFN-48 Package, chip, pads, core, die and IPs
