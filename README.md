@@ -111,9 +111,9 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
 ## References
 ## Acknowledgement
 
-## Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK
-### How to talk to computers
-1. Introduction to QFN-48 Package, chip, pads, core, die and IPs
+# Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK
+## How to talk to computers
+### Introduction to QFN-48 Package, chip, pads, core, die and IPs
 ![1](./Images/1.png)
   This is an Arduino Uno board, which is a microcontroller as it features a microprocessor, memory, and other Ports for input and output. The chip encircled by a yellow circle is called a processor.
   The design of this chip from the abstract level down to the fabrication is done by RTL to GDSll flow.
