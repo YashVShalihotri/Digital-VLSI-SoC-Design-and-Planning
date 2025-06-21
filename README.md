@@ -169,14 +169,12 @@ Application Software runs on Hardware, they communicate with each other via Syst
 <p align = "center">
   <img src="./Images/8.png" width="500" />
 </p>
-So for a Simple code of a watch written in the C language, the compiler compiles the code and makes it in aseembly language which is then given to assembler to be decoded into binary Language. 
-<p align = "center">
-  <img src="./Images/11.png" width="500" />
-</p>
-In the image,we can see the RISC-V instruction set that will be implemented on the hardware, given is the physical Layout of the same.
-<p align = "center">
+So for a Simple code of a watch written in the C language, the compiler compiles the code and makes it in assembly language which is then given to an assembler to be decoded into binary Language. 
+<img src="./Images/11.png" width="500" />
+In the image, we can see the RISC-V instruction set that will be implemented on the hardware, given is the physical Layout of the same.
+
   <img src="./Images/12.png" width="500" />
-</p>
+
 All the code is to be written in this Course.
 
   <img src="./Images/13.png" />
