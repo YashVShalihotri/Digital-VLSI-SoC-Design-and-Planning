@@ -119,25 +119,28 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
 </p>
   This is an Arduino Uno board, which is a microcontroller as it features a microprocessor, memory, and other Ports for input and output. The chip encircled by a yellow circle is called a processor.
   The design of this chip from the abstract level down to the fabrication is done by RTL to GDSll flow.
+   <br>
 <p align = "center">
   <img src="./Images/2.png" width="500" />
-</p>
+</p> 
 The above image shows different components of the microcontroller board having different SDRAM memories, JTAG, and UART protocols along with SoC/Processor.
-
- 
+ <br>
 <p align = "center">
   <img src="./Images/3.png" width="500" />
 </p>
 The above image shows different I/O ports associated with the QFN package.
-
+ <br>
 <p align = "center">
   <img src="./Images/4.png" width="500" />
 </p>
 The above image shows that different I/O ports associated with the QFN package are wire bonded to the Chip.
+ <br>
 <p align = "center">
   <img src="./Images/5.png" width="500" />
 </p>
 Chip components:
   1. Pads: Through which we can send the signal inside the chip I/O port are made here.
   2. Core: Place where all the logic blocks are placed.
-  3. Die: the chip is placed in this physcial area which is utilized based on the requirements.
+  3. Die: the chip is placed in this physical area which is utilized based on the requirements.
+ <br>
+
