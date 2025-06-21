@@ -162,6 +162,6 @@ It is an open-source, free-to-use architecture type that supports 32, 64, and 12
 <p align = "center">
   <img src="./Images/7.png" width="500" />
 </p>
-The above image shows the C code and how it is implemented in the Picorv32 processor and the physical Layout of the processor.
+The above image shows the C code and how it is implemented in the Picorv32 processor and the physical Layout of the Chip
 
 ### From Software Applications to Hardware
