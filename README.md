@@ -181,3 +181,6 @@ These Instructions act as an <b>abstract interface</b> between the C language an
 There is another Interface between Instruction Set and Hardware that is needed, and it is called Hardware Descriptive Language, as Hardware only understands 1s and 0s.<br>
 RTL Language implements the instructions, and it is called RTL Implementation of Instruction Set.
 <img src="./Images/14.png" />
+
+## Soc design and OpenLANE
+### 1. Introduction to all components of open-source digital ASIC design
