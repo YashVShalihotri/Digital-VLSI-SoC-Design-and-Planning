@@ -209,19 +209,12 @@ Key Categories of EDA Tools
 </ul>ul>
 
 ### What is a PDK?
-<br>
+
 <img src="./Images/17.png" />
 PDK is the Process Design Kit given by the foundry, which has all the information on how the chip is to be designed, and these are manufacturable as per the foundry's process Technology.
-<br>
 <img src="./Images/18.png" />
-<br>
 These tools and technologies will be used in this project implementation.
-<br>
 <img src="./Images/19.png" />
-<br>
 130nm Technology is still used for various applications when the critical need is not speed.
-<br>
 <img src="./Images/20.png" />
-<br>
 Typical ASIC Design requires these many EDA tools processes for successful tape-out.
-<br>
