@@ -154,3 +154,14 @@ The aboce image shows different parts that makes a working chip which consists o
   <li><b> Macros:</b> Predefined functional Blocks that can be used for creating certain logic.For example :RISC-V Soc Architecture, SPI </li>
    <li><b>IPs:</b> Intellectual Property, which is outsourced from vendors and is fully optimized to be used in the Chip, as it is not necessary to make these designs again and again.For example, SDRAM,PLL,ADC,DAC</li>
 </ul>
+
+### Introduction to RISC-V
+RISC-V ISA (Instruction Set Architecture)
+This stands for Reduced Instruction Set Computer V, where V means the generation.
+It is an open-source, free-to-use architecture type that supports 32, 64, and 128-bit architectures.
+<p align = "center">
+  <img src="./Images/7.png" width="500" />
+</p>
+The above image shows the C code and how it is implemented in the Picorv32 processor and the physical Layout of the processor.
+
+### From Software Applications to Hardware
