@@ -178,7 +178,6 @@ In the image,we can see the RISC-V instruction set that will be implemented on t
   <img src="./Images/12.png" width="500" />
 </p>
 All the code is to be written in this Course.
-<p align = "center">
+
   <img src="./Images/13.png" width="500" />
-</p>
 These Instructions act as an <b>abstract interface</b> between the C language and Hardware.
