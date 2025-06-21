@@ -165,3 +165,19 @@ It is an open-source, free-to-use architecture type that supports 32, 64, and 12
 The above image shows the C code and how it is implemented in the Picorv32 processor and the physical Layout of the Chip
 
 ### From Software Applications to Hardware
+Application Software runs on Hardware, they communicate with each other via System software (Operating System), which converts the High-level language Code to low-level Language code and then into assembly, which is then converted into binary digits that the Computer understands.
+<p align = "center">
+  <img src="./Images/8.png" width="500" />
+</p>
+So for a Simple code of a watch written in the C language the compiler compiles the code and makes it in aseembly language which is then given to assembler to be decoded into binary Language. 
+<p align = "center">
+  <img src="./Images/11.png" width="500" />
+</p>
+In the image,we can see the RISC-V instruction set that will be implemented on the hardware, given is the physical Layout of the same.
+<p align = "center">
+  <img src="./Images/12.png" width="500" />
+</p>
+All the code is to be written in this Course.
+<p align = "center">
+  <img src="./Images/13.png" width="500" />
+</p>
