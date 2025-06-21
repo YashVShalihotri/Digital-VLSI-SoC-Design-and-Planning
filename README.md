@@ -183,4 +183,4 @@ RTL Language implements the instructions, and it is called RTL Implementation of
 
 ## Soc design and OpenLANE
 ### 1. Introduction to all components of open-source digital ASIC design
-<img src="./Images/15.png" />
+<img src="./Images/16.png" />
