@@ -145,4 +145,12 @@ Chip components:
    <li> Die: the chip is placed in this physical area which is utilized based on the requirements. </li>
 </ul>
  <br>
-
+ 
+<p align = "center">
+  <img src="./Images/6.png" width="500" />
+</p>
+The aboce image shows different parts that makes a working chip which consists of PLL,ADC,DAC RISC-V SoC,SRAM which can be classified in :
+<ul>
+  <li>Macros:Pre defined functional Blocks that can be used for creating certain logic.For example :RISC-V Soc Architecture,SPI </li>
+   <li>IPs: Intellectual Property, which is outsourced from vendors and is fully optimized to be used in the Chip.For example, SDRAM,PLL,ADC,DAC, we do need to make them on our own</li>
+</ul>
