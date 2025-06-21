@@ -151,6 +151,6 @@ Chip components:
 </p>
 The aboce image shows different parts that makes a working chip which consists of PLL,ADC,DAC RISC-V SoC,SRAM which can be classified in :
 <ul>
-  <li>Macros:Pre defined functional Blocks that can be used for creating certain logic.For example :RISC-V Soc Architecture,SPI </li>
-   <li>IPs: Intellectual Property, which is outsourced from vendors and is fully optimized to be used in the Chip.For example, SDRAM,PLL,ADC,DAC, we do need to make them on our own</li>
+  <li>**Macros:** Predefined functional Blocks that can be used for creating certain logic.For example :RISC-V Soc Architecture, SPI </li>
+   <li>**IPs:** Intellectual Property, which is outsourced from vendors and is fully optimized to be used in the Chip, as it is not necessary to make these designs again and again.For example, SDRAM,PLL,ADC,DAC</li>
 </ul>
