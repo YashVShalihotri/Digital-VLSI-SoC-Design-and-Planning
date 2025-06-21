@@ -139,8 +139,10 @@ The above image shows that different I/O ports associated with the QFN package a
   <img src="./Images/5.png" width="500" />
 </p>
 Chip components:
-  1. Pads: Through which we can send the signal inside the chip I/O port are made here.
-  2. Core: Place where all the logic blocks are placed.
-  3. Die: the chip is placed in this physical area which is utilized based on the requirements.
+<ul>
+  <li>Pads: Through which we can send the signal inside the chip I/O port are made here. </li>
+  <li> Core: Place where all the logic blocks are placed. </li>
+   <li> Die: the chip is placed in this physical area which is utilized based on the requirements. </li>
+</ul>
  <br>
 
