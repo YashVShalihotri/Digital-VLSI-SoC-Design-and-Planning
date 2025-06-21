@@ -1,4 +1,3 @@
-![Screenshot (155)](https://github.com/user-attachments/assets/00a89c71-a3d3-4e34-94a2-7bac05a5e70a)﻿# Digital-VLSI-SoC-Design-and-Planning
 Notes Summarized for the Workshop held between 18th June and 1st July 2025
 ## Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK
 ### How to talk to computers
