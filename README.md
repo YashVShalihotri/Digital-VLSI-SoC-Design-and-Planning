@@ -181,4 +181,4 @@ All the code is to be written in this Course.
 <p align = "center">
   <img src="./Images/13.png" width="500" />
 </p>
-These Instructions act as an **abstract interface** between the C language and Hardware.
+These Instructions act as an <b>abstract interface</b> between the C language and Hardware.
