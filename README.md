@@ -184,3 +184,30 @@ RTL Language implements the instructions, and it is called RTL Implementation of
 ## Soc design and OpenLANE
 ### 1. Introduction to all components of open-source digital ASIC design
 <img src="./Images/16.png" />
+Digital ASIC Design Flow is made of three components:
+<ul>
+<li>RTL IP's</li>
+<li>EDA tools</li>
+<li>PDK's</li>
+</ul>
+For making an open-source ASIC Design, all these are required.
+
+### RTL IPs
+RTL IPs—short for Register Transfer Level Intellectual Properties—are reusable hardware design blocks described at the RTL abstraction level, typically using languages like Verilog or VHDL. These IPs are foundational in building complex digital systems like SoCs (System on Chips) and FPGAs.
+
+### EDA Tools
+Electronic Design Automation (EDA) tools are the digital backbone of modern chip and circuit design. They’re sophisticated software suites that help engineers design, simulate, verify, and prepare electronic systems—like integrated circuits (ICs) and printed circuit boards (PCBs)—for manufacturing.
+Key Categories of EDA Tools
+<b>Schematic Capture: </b> Tools like OrCAD and KiCad let you draw circuit diagrams and define component connections.
+<b>Simulation: </b> SPICE-based simulators (e.g., LTspice, HSPICE) model circuit behavior before physical prototyping.
+<b>Layout and PCB Design:  </b>Tools like Altium Designer, Cadence Allegro, and Eagle help design the physical layout of PCBs.
+<b>RTL Design and Synthesis:  </b>Tools such as Synopsys Design Compiler and Xilinx Vivado convert RTL code (Verilog/VHDL) into gate-level netlists.
+<b>Verification:  </b>UVM-based tools like Mentor Questa or Cadence Xcelium simulate and verify logic correctness.
+<b>Physical Design and DRC/LVS: </b> Tools like Cadence Innovus and Synopsys IC Compiler handle placement, routing, and design rule checks.
+<b>Timing and Power Analysis: </b> PrimeTime and Voltus analyze timing closure and power consumption.
+
+
+### What is a PDK?
+<img src="./Images/17.png" />
+PDK is the Process Design Kit given by the foundry, which has all the information on how the chip is to be designed, and these are manufacturable as per the foundry's process Technology.
+<img src="./Images/18.png" />
