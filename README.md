@@ -114,15 +114,54 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
 # Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK
 ## How to talk to computers
 ### Introduction to QFN-48 Package, chip, pads, core, die and IPs
-![1](./Images/1.png)
+<p align = "center">
+  <img src="./Images/1.png" width="500" />
+</p>
   This is an Arduino Uno board, which is a microcontroller as it features a microprocessor, memory, and other Ports for input and output. The chip encircled by a yellow circle is called a processor.
   The design of this chip from the abstract level down to the fabrication is done by RTL to GDSll flow.
-
-![2](./Images/2.png)
+   <br>
+<p align = "center">
+  <img src="./Images/2.png" width="500" />
+</p> 
 The above image shows different components of the microcontroller board having different SDRAM memories, JTAG, and UART protocols along with SoC/Processor.
+ <br>
+<p align = "center">
+  <img src="./Images/3.png" width="500" />
+</p>
+The above image shows different I/O ports associated with the QFN package.
+ <br>
+<p align = "center">
+  <img src="./Images/4.png" width="500" />
+</p>
+The above image shows that different I/O ports associated with the QFN package are wire bonded to the Chip.
+ <br>
+<p align = "center">
+  <img src="./Images/5.png" width="500" />
+</p>
+Chip components:
+<ul>
+  <li>Pads: Through which we can send the signal inside the chip I/O port are made here. </li>
+  <li> Core: Place where all the logic blocks are placed. </li>
+   <li> Die: the chip is placed in this physical area which is utilized based on the requirements. </li>
+</ul>
+ <br>
+ 
+<p align = "center">
+  <img src="./Images/6.png" width="500" />
+</p>
+The aboce image shows different parts that makes a working chip which consists of PLL,ADC,DAC RISC-V SoC,SRAM which can be classified in :
+<ul>
+  <li><b> Macros:</b> Predefined functional Blocks that can be used for creating certain logic.For example :RISC-V Soc Architecture, SPI </li>
+   <li><b>IPs:</b> Intellectual Property, which is outsourced from vendors and is fully optimized to be used in the Chip, as it is not necessary to make these designs again and again.For example, SDRAM,PLL,ADC,DAC</li>
+</ul>
 
- Chip components:
-  1. Pads: Through which we can send the signal inside the chip.
-  2. Core: Place where all the logic gates are fixed.
-  3. Die: Present at the corner. It is the size of the entire chip.
-![3](./Images/3.png)
+### Introduction to RISC-V
+RISC-V ISA (Instruction Set Architecture)
+This stands for Reduced Instruction Set Computer V, where V means the generation.
+It is an open-source, free-to-use architecture type that supports 32, 64, and 128-bit architectures.
+<p align = "center">
+  <img src="./Images/7.png" width="500" />
+</p>
+The above image shows the C code and how it is implemented in the Picorv32 processor and the physical Layout of the processor.
+
+### From Software Applications to Hardware
