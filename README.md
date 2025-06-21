@@ -169,7 +169,7 @@ Application Software runs on Hardware, they communicate with each other via Syst
 <p align = "center">
   <img src="./Images/8.png" width="500" />
 </p>
-So for a Simple code of a watch written in the C language the compiler compiles the code and makes it in aseembly language which is then given to assembler to be decoded into binary Language. 
+So for a Simple code of a watch written in the C language, the compiler compiles the code and makes it in aseembly language which is then given to assembler to be decoded into binary Language. 
 <p align = "center">
   <img src="./Images/11.png" width="500" />
 </p>
@@ -181,3 +181,4 @@ All the code is to be written in this Course.
 <p align = "center">
   <img src="./Images/13.png" width="500" />
 </p>
+These Instructions act as an **abstract interface** between the C language and Hardware.
