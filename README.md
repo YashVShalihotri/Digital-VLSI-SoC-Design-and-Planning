@@ -1,4 +1,4 @@
-﻿# Digital-VLSI-SoC-Design-and-Planning
+![Screenshot (155)](https://github.com/user-attachments/assets/00a89c71-a3d3-4e34-94a2-7bac05a5e70a)﻿# Digital-VLSI-SoC-Design-and-Planning
 Notes Summarized for the Workshop held between 18th June and 1st July 2025
 ## Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK
 ### How to talk to computers
@@ -140,9 +140,9 @@ The above image shows that different I/O ports associated with the QFN package a
 </p>
 Chip components:
 <ul>
-  <li>Pads: Through which we can send the signal inside the chip I/O port are made here. </li>
+  <li>Pads: Through which we can send the signal inside the chip, I/O ports are made here. </li>
   <li> Core: Place where all the logic blocks are placed. </li>
-   <li> Die: the chip is placed in this physical area which is utilized based on the requirements. </li>
+   <li> Die: the chip is placed in this physical area, which is utilized based on the requirements. </li>
 </ul>
  <br>
  
@@ -169,7 +169,7 @@ Application Software runs on Hardware, they communicate with each other via Syst
 <p align = "center">
   <img src="./Images/8.png" width="500" />
 </p>
-So for a Simple code of a watch written in the C language, the compiler compiles the code and makes it in assembly language which is then given to an assembler to be decoded into binary Language. 
+So for a Simple code of a watch written in the C language, the compiler compiles the code and makes it in assembly language, which is then given to an assembler to be decoded into binary Language. 
 <img src="./Images/11.png" />
 In the image, we can see the RISC-V instruction set that will be implemented on the hardware, given is the physical Layout of the same.
 <img src="./Images/12.png"/>
@@ -178,4 +178,6 @@ All the code is to be written in this Course.
 These Instructions act as an <b>abstract interface</b> between the C language and Hardware.
 <br>
 <img src="./Images/15.png" />
-There is another Interface between Instruction Set and Hardware which is called Hardware Descriptive Language.
+There is another Interface between Instruction Set and Hardware that is needed, and it is called Hardware Descriptive Language, as Hardware only understands 1s and 0s.<br>
+RTL Language implements the instructions, and it is called RTL Implementation of Instruction Set.
+<img src="./Images/14.png" />
