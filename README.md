@@ -245,6 +245,23 @@ The placement of pre-placed cells is planned in Floor planning, and how differen
 Partition is done in the chip for different components such as I/O Pads, CPU, SRAM, DRAM, etc.
 <img src="./Images/26.png"/>
 The image shows the multiple power lines as a mesh structure, so all the components of the Chip get Voltage and ground lines, and there is no Voltage Droop and Ground Bounce. 
+### PLACEMENT
+<img src="./Images/27.png"/>
+Placement Step is divided into two parts:
+<ul>
+  <li>Global Placement</li>
+  <li>Detailed Placement</li>
+</ul>
+In <b>Global Placement</b>, the gates or Flops that are taken from SCL are placed onto the Chip, which can be illegal according to the DRC rules, as these are placed to check whether the blocks will get power and the signal integrity is maintained or not, and this is just for optimized placement.
+In <b>Detailed Placement</b>, the blocks are placed correctly such that there is no illegal placement according to DRC Rules.
+<img src="./Images/28.png"/>
+
+### CLOCK TREE SYNTHESIS
+In this Step Clock Tree is created such that all the Blocks get a clock pulse at the same time if the circuit operates in that way, or the clock pulse should reach without any Delay and with good signal integrity.
+This helps us in understanding where we need a buffer to be placed.
+<img src="./Images/29.png"/>
+
+### ROUTING
 
 ### 3. Introduction to OpenLANE and Strive chipsets
 
