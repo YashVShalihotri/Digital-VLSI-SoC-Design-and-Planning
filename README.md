@@ -263,6 +263,7 @@ This helps us in understanding where we need a buffer to be placed.
 
 ### ROUTING
 
+
 ### 3. Introduction to OpenLANE and Strive chipsets
 
 ### 4. Introduction to OpenLANE detailed ASIC design flow
