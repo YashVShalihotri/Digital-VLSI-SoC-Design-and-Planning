@@ -233,17 +233,17 @@ The major steps involved are :
    
 </ul>
 
-#### SYNTHESIS
+### SYNTHESIS
 <img src="./Images/23.png" />
 Converts the RTL code into a Gate-level Netlist that is made from a Standard Cell Library.
 <img src="./Images/24.png" />
 
-#### FLOOR PLANNING / POWER PLANNING
+### FLOOR PLANNING / POWER PLANNING
 This is the next step after the RTL is converted into a gate-level Netlist.
 The placement of pre-placed cells is planned in Floor planning, and how different VDD and Ground wires will be connected in a mesh is decided in this step.
-<img src="./Images/25.png" />
+<img src="./Images/25.png" width = "500"/>
 Partition is done in the chip for different components such as I/O Pads, CPU, SRAM, DRAM, etc.
-<img src="./Images/26.png" />
+<img src="./Images/26.png" width = "500"/>
 The image shows the multiple power lines as a mesh structure, so all the components of the Chip get Voltage and ground lines, and there is no Voltage Droop and Ground Bounce. 
 
 ### 3. Introduction to OpenLANE and Strive chipsets
