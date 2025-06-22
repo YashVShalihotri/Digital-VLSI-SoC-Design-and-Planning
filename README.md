@@ -218,3 +218,34 @@ These tools and technologies will be used in this project implementation.
 130nm Technology is still used for various applications when the critical need is not speed.
 <img src="./Images/20.png" />
 Typical ASIC Design requires these many EDA tools processes for successful tape-out.
+
+### 2. Simplified RTL2GDS flow
+<img src="./Images/22.png" />
+The RTL to GSDII Flow has numerous steps that need to be performed to transition RTL-generated code to Tape-Out.
+The major steps involved are :
+<ul>
+  <li><b>Synthesis</b></li>
+  <li><b>Floor Planning/Power Planning</b></li>
+   <li><b>Placement</b></li>
+   <li><b>Clock Tree Synthesis</b></li>
+   <li><b>Routing</b></li>
+   <li><b>Sign-Off</b></li>
+   
+</ul>
+
+#### SYNTHESIS
+<img src="./Images/23.png" />
+Converts the RTL code into a Gate-level Netlist that is made from a Standard Cell Library.
+<img src="./Images/24.png" />
+
+#### FLOOR PLANNING / POWER PLANNING
+This is the next step after the RTL is converted into a gate-level Netlist.
+The placement of pre-placed cells is planned in Floor planning, and how different VDD and Ground wires will be connected in a mesh is decided in this step.
+<img src="./Images/25.png" />
+Partition is done in the chip for different components such as I/O Pads, CPU, SRAM, DRAM, etc.
+<img src="./Images/26.png" />
+The image shows the multiple power lines as a mesh structure, so all the components of the Chip get Voltage and ground lines, and there is no Voltage Droop and Ground Bounce. 
+
+### 3. Introduction to OpenLANE and Strive chipsets
+
+### 4. Introduction to OpenLANE detailed ASIC design flow
