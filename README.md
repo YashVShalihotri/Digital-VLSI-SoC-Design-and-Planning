@@ -342,20 +342,24 @@ Synthesis is done
 2. Number of cells = 14876 <br>
 3. <b>Flop ratio = 1613/14876 = 10.84% </b> 
 <img src="./Images/60.png"/>
-The folder before was empty but now it has results in the sythesis folder in the results directory.
+The folder before was empty, but now it has results in the synthesis folder in the results directory.
 
 # Day 2 - Good floor planning considerations
 ## Chip Floor planning consideration
 ### Utilization factor and aspect ratio 
-Die is the cut out silicon from the Silicon Wafer.This die constitues of I/O pads and Core where the whole logic blocks are placed.
+Die is the cut-out silicon from the Silicon Wafer. This die consists of I/O pads and Core, where the whole logic blocks are placed.
 <img src="./Images/61.png"/>
 The width and height of the Core and Die are chosen depending on the Netlist. A netlist describes the connectivity of an electronic design. We take the netlist and map the gates and flops into their physical dimensions, making blocks of them and placing them next to each other.  
 <img src="./Images/64.png"/>
-Let us assume that a standard cell is 1 unit in width and height.So the area it consumes is 1 sq unit.
+Let us assume that a standard cell is 1 unit in width and height. So the area it consumes is 1 sq. unit.
 <img src="./Images/62.png"/>
-So for a netlist that consists of 2 gates and 2 flops, the area consumed would be 2*2 = 4sq unit.
-Utilization Factor means how much the core is filled with the logic blocks so for a 4 sq unit logic block if the size of core was 4 unit in width and height then the total area for the Core would be 16 sq unit.<br>
-So the Utilization factor  = 4/16, which is 25%.
+So, for a netlist that consists of 2 gates and 2 flops, the area consumed would be 2*2 = 4 sq. units. <br>
+<b>Utilization Factor </b> means how much the core is filled with the logic blocks, so for a 4 sq unit logic block, if the size of the core is 4 units in width and 2 in height, then the total area for the Core would be 16 sq units.<br>
+
+<img src="./Images/65.png"/>
+So the Utilization factor  = 4/8, which is 50%.<br>
+<b>Aspect Ratio</b> is the ratio of Height/width, so in this case it will be <b>2/4 = 0.5.</b><br>
+
 ### Concept of pre-placed cells
 ### De-coupling capacitors
 ### Power planning
