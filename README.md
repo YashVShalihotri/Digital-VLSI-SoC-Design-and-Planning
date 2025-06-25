@@ -257,12 +257,15 @@ In <b>Detailed Placement</b>, the blocks are placed correctly such that there is
 <img src="./Images/28.png"/>
 
 ### CLOCK TREE SYNTHESIS
-In this Step Clock Tree is created such that all the Blocks get a clock pulse at the same time if the circuit operates in that way, or the clock pulse should reach without any Delay and with good signal integrity.
-This helps us in understanding where we need a buffer to be placed.
+In this Step Clock Tree is created such that all the Blocks get a clock pulse at the same time, if the circuit operates in that way, or the clock pulse should reach without any Delay and with good signal integrity.
+This helps us understand where a buffer needs to be placed.
 <img src="./Images/29.png"/>
 
 ### ROUTING
-
+<img src="./Images/30.png"/>
+In this step, we perform routing so that every block receives the signal with good signal strength and, at the same time, ensures that each block works correctly.
+<img src="./Images/31.png"/>
+Divided into two sections: Global routing and Detailed Routing.
 
 ### 3. Introduction to OpenLANE and Strive chipsets
 
