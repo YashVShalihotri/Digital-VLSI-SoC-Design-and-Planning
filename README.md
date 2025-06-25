@@ -341,8 +341,8 @@ Synthesis is done
 <img src="./Images/55.png"/>
 2. Number of cells = 14876 <br>
 3. <b>Flop ratio = 1613/14876 = 10.84% </b> 
-
-
+<img src="./Images/60.png"/>
+The folder before was empty but now it has results in the sythesis folder in the results directory.
 
 
 
