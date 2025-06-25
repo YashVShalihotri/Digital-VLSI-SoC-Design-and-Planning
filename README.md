@@ -266,7 +266,37 @@ This helps us understand where a buffer needs to be placed.
 In this step, we perform routing so that every block receives the signal with good signal strength and, at the same time, ensures that each block works correctly.
 <img src="./Images/31.png"/>
 Divided into two sections: Global routing and Detailed Routing.
+### SIGN-OFF
+After all these steps the design is finally ready for sign-off where different conditons are to be met:
+<ul>
+  <li>Physical Verification: DRS and LVS</li>
+  <li>Timing Verification: Static Timing Analysis</li>
+
+</ul>
 
 ### 3. Introduction to OpenLANE and Strive chipsets
-
+OPENLANE is an automated RTL to GDSII flow that comprises several tools such as OpenROAD, Yosys, Magic, Netgen, Fault, CVC SPEF-Extractor, CU-GR, Klayout, etc. striVe is a family of open everything SoCs: Open PDK, Open EDA, Open RTL.<br>
+<img src="./Images/34.png"/>
+<b>striVe SoC Family </b>
+<img src="./Images/35.png"/>
+Different versions of striVe with each generation are better than the previous one.
 ### 4. Introduction to OpenLANE detailed ASIC design flow
+<img src="./Images/33.png"/>
+OpenLANE ASIC design flow starts from RTL synthesis, which is done with <b>YoSys tool</b> and <b>abc for optimization</b>.
+<img src="./Images/36.png"/>
+<b>Synthesis Optimizations</b>
+After that, STA is done with the ideal clocks to check for the timings. After that, DFT is done, Design for Test using <b>Fault</b> software. After that, using OpenROAD floorplanning, placement, CTS, and Global Routing is done, followed by Detailed Routing using TritonRoute.Fake antenna diodes are placed as metal wires can act as an Antenna, which can create problems. All this procedure is done till we reach an optimized design.<br>
+<b>Every time the netlist is modified.(CTS modifies the netlist and Post Placements optimization also modifies the netlist).so for that verification must be performed. The LCE(yosys) is used to formally confirm that the function did not change after modifying the netlist.</b> 
+After we reach optimized design, we go for RC Extraction, then STA is done using OpenSTA as the parasitic RC has been extracted,d and we can test the design with real clocks. After this,s we do Physical and Timing Verification and then we get the complete GDSII.
+
+
+
+
+
+
+
+
+
+
+
+
