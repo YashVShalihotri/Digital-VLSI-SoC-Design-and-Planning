@@ -281,7 +281,7 @@ OPENLANE is an automated RTL to GDSII flow that comprises several tools such as 
 <img src="./Images/35.png"/>
 Different versions of striVe with each generation are better than the previous one.
 ### 4. Introduction to OpenLANE detailed ASIC design flow
-<img src="./Images/33.png"/>
+<img src="./Images/37.png"/>
 OpenLANE ASIC design flow starts from RTL synthesis, which is done with <b>YoSys tool</b> and <b>abc for optimization</b>.
 <img src="./Images/36.png"/>
 <b>Synthesis Optimizations</b>
