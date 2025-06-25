@@ -340,9 +340,7 @@ Synthesis is done
 1. Number of D flip flops : 1613
 <img src="./Images/54.png"/>
 2. Number of cells = 14876
-3. <b>Flop ratio = 1613/14876 = 10.84% </b>
-
-
+3. <b>Flop ratio = 1613/14876 = 10.84% </b> 
 
 
 
