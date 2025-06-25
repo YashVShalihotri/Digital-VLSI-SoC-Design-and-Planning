@@ -284,9 +284,17 @@ Different versions of striVe with each generation are better than the previous o
 <img src="./Images/37.png"/>
 OpenLANE ASIC design flow starts from RTL synthesis, which is done with <b>YoSys tool</b> and <b>abc for optimization</b>.
 <img src="./Images/36.png"/>
-<b>Synthesis Optimizations</b>
-After that, STA is done with the ideal clocks to check for the timings. After that, DFT is done, Design for Test using <b>Fault</b> software. After that, using OpenROAD floorplanning, placement, CTS, and Global Routing is done, followed by Detailed Routing using TritonRoute.Fake antenna diodes are placed as metal wires can act as an Antenna, which can create problems. All this procedure is done till we reach an optimized design.<br>
-<b>Every time the netlist is modified.(CTS modifies the netlist and Post Placements optimization also modifies the netlist).so for that verification must be performed. The LCE(yosys) is used to formally confirm that the function did not change after modifying the netlist.</b> 
+<b>Synthesis Optimizations iterations </b><br>
+After that, STA is done with the ideal clocks to check for the timings. After that, DFT is done, Design for Test using <b>Fault</b> software. <br>
+<img src="./Images/38.png"/>
+After that, using OpenROAD floorplanning, placement, CTS, and Global Routing is done, followed by Detailed Routing using TritonRoute.<br>
+<img src="./Images/39.png"/>
+<b>Every time the netlist is modified.(CTS modifies the netlist and Post Placements optimization also modifies the netlist).so for that verification must be performed. The LCE(yosys) is used to formally confirm that the function did not change after modifying the netlist.</b><br>
+Fake antenna diodes are placed as metal wires that can act as an Antenna, which can create problems. 
+<img src="./Images/40.png"/>
+<img src="./Images/41.png"/>
+<img src="./Images/42.png"/>
+<br>All this procedure is done till we reach an optimized design.
 After we reach optimized design, we go for RC Extraction, then STA is done using OpenSTA as the parasitic RC has been extracted,d and we can test the design with real clocks. After this,s we do Physical and Timing Verification and then we get the complete GDSII.
 
 
