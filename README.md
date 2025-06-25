@@ -290,7 +290,7 @@ After that, STA is done with the ideal clocks to check for the timings. After th
 After that, using OpenROAD floorplanning, placement, CTS, and Global Routing is done, followed by Detailed Routing using TritonRoute.<br>
 <img src="./Images/39.png"/>
 <b>Every time the netlist is modified.(CTS modifies the netlist and Post Placements optimization also modifies the netlist).so for that verification must be performed. The LCE(yosys) is used to formally confirm that the function did not change after modifying the netlist.</b>
-<br>
+<br><br>
 Fake antenna diodes are placed, as metal wires can act as an Antenna, which can create problems. 
 <img src="./Images/40.png"/>
 <img src="./Images/41.png"/>
