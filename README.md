@@ -355,7 +355,8 @@ Let us assume that a standard cell is 1 unit in width and height.So the area it 
 <img src="./Images/62.png"/>
 So for a netlist that consists of 2 gates and 2 flops, the area consumed would be 2*2 = 4sq unit.
 Utilization Factor means how much the core is filled with the logic blocks so for a 4 sq unit logic block if the size of core was 4 unit in width and height then the total area for the Core would be 16 sq unit.<br>
-So the Utilization factor  = 4/16, which is 25%.
+So the Utilization factor  = 4/8, which is 50%.
+<img src="./Images/65.png"/>
 ### Concept of pre-placed cells
 ### De-coupling capacitors
 ### Power planning
