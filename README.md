@@ -318,10 +318,17 @@ The PDK we using is Skywater 130nm and these are all the related files to the PD
 ### Design Preparation Step
 1. <b>docker : Used to get in the docker container.</b>
 2. <b> ./flow.tcl -interactive : This command is used to get in the OpenLANE flow and interactive is used to do the RTL to GDSII flow step by step, as the whole process is automated if we do not use interactive.</b>
+3. <b>package require openlane 0.9:</b> this command gets us in OpenLANE and the whole process of generating RTL to GDSII will be done in this.
 <img src="./Images/48.png"/>
-<img src="./Images/49.png"/>
-This is the <b>picorv32a .tcl</b> file, which tells about the specification of the design we are generating the whole flow for.
+
+we use the command <b> prep -design picorv32a </b> in the OpenLane to prepare the directory.
+
 ### Review files after design prep and run synthesis
+runs folder is created in designs/picorv32a directory.
+<img src="./Images/49.png"/>
+<img src="./Images/50.png"/>
+This is .lef file which tells about the size and locations of cells and consisting of all physical dimension information.
+This is the <b>picorv32a .tcl</b> file, which tells about the specification of the design we are generating the whole flow for.
 ### OpenLANE Project Git Link Description
 ### Steps to characterize synthesis results
 
