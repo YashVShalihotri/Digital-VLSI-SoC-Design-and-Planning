@@ -358,7 +358,8 @@ So, for a netlist that consists of 2 gates and 2 flops, the area consumed would 
 
 <img src="./Images/65.png"/>
 So the Utilization factor  = 4/8, which is 50%.<br>
-<b>Aspect Ratio</b> is the ratio of Height/width, so in this case it will be <b>2/4 = 0.5.</b>
+<b>Aspect Ratio</b> is the ratio of Height/width, so in this case it will be <b>2/4 = 0.5.</b><br>
+
 ### Concept of pre-placed cells
 ### De-coupling capacitors
 ### Power planning
