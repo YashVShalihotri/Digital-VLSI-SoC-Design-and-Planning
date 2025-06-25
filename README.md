@@ -354,9 +354,11 @@ The width and height of the Core and Die are chosen depending on the Netlist. A 
 Let us assume that a standard cell is 1 unit in width and height. So the area it consumes is 1 sq. unit.
 <img src="./Images/62.png"/>
 So, for a netlist that consists of 2 gates and 2 flops, the area consumed would be 2*2 = 4 sq. units. <br>
-<b>Utilization Factor <b> means how much the core is filled with the logic blocks, so for a 4 sq unit logic block, if the size of the core is 4 units in width and 2 in height, then the total area for the Core would be 16 sq units.<br>
-So the Utilization factor  = 4/8, which is 50%.
+<b>Utilization Factor </b> means how much the core is filled with the logic blocks, so for a 4 sq unit logic block, if the size of the core is 4 units in width and 2 in height, then the total area for the Core would be 16 sq units.<br>
+
 <img src="./Images/65.png"/>
+So the Utilization factor  = 4/8, which is 50%.<br>
+<b>Aspect Ratio</b> is the ratio of Height/width, so in this case it will be <b>2/4 = 0.5.</b>
 ### Concept of pre-placed cells
 ### De-coupling capacitors
 ### Power planning
