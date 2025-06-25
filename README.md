@@ -376,10 +376,8 @@ These cells are usually marked as fixed, so the tool doesn’t move them during 
   Big Combinational blocks are broken into small blocks so that they can be treated as individual blocks which helps in optimization of the area.
 </p>
 
-<p align = "right" > 
+<p float = "left" > 
   <img src="./Images/68.png" width = "500"/>
-</p>
-<p> 
   <img src="./Images/67.png" width = "500"/> 
 </p>
 
