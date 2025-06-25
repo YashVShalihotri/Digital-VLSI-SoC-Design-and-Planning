@@ -266,7 +266,18 @@ This helps us understand where a buffer needs to be placed.
 In this step, we perform routing so that every block receives the signal with good signal strength and, at the same time, ensures that each block works correctly.
 <img src="./Images/31.png"/>
 Divided into two sections: Global routing and Detailed Routing.
+### SIGN-OFF
+After all these steps the design is finally ready for sign-off where different conditons are to be met:
+<ul>
+  <li>Physical Verification: DRS and LVS</li>
+  <li>Timing Verification: Static Timing Analysis</li>
+
+</ul>
 
 ### 3. Introduction to OpenLANE and Strive chipsets
-
+OPENLANE is an automated RTL to GDSII flow that comprises several tools such as OpenROAD, Yosys, Magic, Netgen, Fault, CVC SPEF-Extractor, CU-GR, Klayout, etc. striVe is a family of open everything SoCs: Open PDK, Open EDA, Open RTL.<br>
+<img src="./Images/34.png"/>
+<b>striVe SoC Family </b>
+<img src="./Images/35.png"/>
+Different versions of striVe with each generation are better than the previous one.
 ### 4. Introduction to OpenLANE detailed ASIC design flow
