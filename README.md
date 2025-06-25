@@ -289,13 +289,14 @@ After that, STA is done with the ideal clocks to check for the timings. After th
 <img src="./Images/38.png"/>
 After that, using OpenROAD floorplanning, placement, CTS, and Global Routing is done, followed by Detailed Routing using TritonRoute.<br>
 <img src="./Images/39.png"/>
-<b>Every time the netlist is modified.(CTS modifies the netlist and Post Placements optimization also modifies the netlist).so for that verification must be performed. The LCE(yosys) is used to formally confirm that the function did not change after modifying the netlist.</b><br>
-Fake antenna diodes are placed as metal wires that can act as an Antenna, which can create problems. 
+<b>Every time the netlist is modified.(CTS modifies the netlist and Post Placements optimization also modifies the netlist).so for that verification must be performed. The LCE(yosys) is used to formally confirm that the function did not change after modifying the netlist.</b>
+<br><br>
+Fake antenna diodes are placed, as metal wires can act as an Antenna, which can create problems. 
 <img src="./Images/40.png"/>
 <img src="./Images/41.png"/>
 <img src="./Images/42.png"/>
 <br>All this procedure is done till we reach an optimized design.
-After we reach optimized design, we go for RC Extraction, then STA is done using OpenSTA as the parasitic RC has been extracted,d and we can test the design with real clocks. After this,s we do Physical and Timing Verification and then we get the complete GDSII.
+After we reach optimized design, we go for RC Extraction, then STA is done using OpenSTA as the parasitic RC has been extracted, and we can test the design with real clocks. After this,s we do Physical and Timing Verification and then we get the complete GDSII.
 
 
 
