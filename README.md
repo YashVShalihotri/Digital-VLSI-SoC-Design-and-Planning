@@ -375,8 +375,13 @@ These cells are usually marked as fixed, so the tool doesn’t move them during 
 <b>Defininng Location of Pre placed Cell</b>
   Big Combinational blocks are broken into small blocks so that they can be treated as individual blocks which helps in optimization of the area.
 </p>
-<p align = "right" width = "500"> <img src="./Images/68.png"/> </p>
-<p width = "500" > <img src="./Images/67.png"/> </p>
+
+<p align = "right" > 
+  <img src="./Images/68.png" width = "500"/>
+</p>
+<p> 
+  <img src="./Images/67.png" width = "500"/> 
+</p>
 
 ### De-coupling capacitors
 ### Power planning
