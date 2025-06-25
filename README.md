@@ -297,6 +297,9 @@ Fake antenna diodes are placed, as metal wires can act as an Antenna, which can 
 <img src="./Images/42.png"/>
 <br>All this procedure is done till we reach an optimized design.
 After we reach optimized design, we go for RC Extraction, then STA is done using OpenSTA as the parasitic RC has been extracted, and we can test the design with real clocks. After this,s we do Physical and Timing Verification and then we get the complete GDSII.
+<img src="./Images/44.png"/>
+<img src="./Images/45.png"/>
+
 
 
 
