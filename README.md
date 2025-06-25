@@ -303,11 +303,11 @@ This completes the RTL to GDSII flow.
 
 ## Get familiar to open-source EDA tools
 This section explains basic commands for the Terminal 
-1. cd : Change directory
-2. ls -ltr: gives the list of files and folders in the current directory.
-3. less : Opens the file
-4. pwd : Tells the current directory.
-5. clear : Clears the terminal screen.
+1. <b>cd </b>: Change directory
+2.  <b>ls -ltr:  </b>gives the list of files and folders in the current directory.
+3.  <b>less :  </b>Opens the file
+4.  <b>pwd :  </b>Tells the current directory.
+5.  <b>clear : </b> Clears the terminal screen.
 
 ### OpenLANE Directory structure in detail
 
