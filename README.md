@@ -327,11 +327,16 @@ we use the command <b> prep -design picorv32a </b> in the OpenLane to prepare th
 runs folder is created in designs/picorv32a directory.
 <img src="./Images/50.png"/>
 This is .lef file which tells about the size and locations of cells and consisting of all physical dimension information.
-<img src="./Images/49.png"/>
+<img src="./Images/51.png"/>
 This is the <b>picorv32a .tcl</b> file, which tells about the specification of the design we are generating the whole flow for.
-
+<img src="./Images/52.png"/>
+The <b>run_synthesis </b> command is used to run the synthesis.
 ### OpenLANE Project Git Link Description
+This is the GitHub repository for the OpenLane project <b> https://github.com/efabless/OpenLane/blob/master/README.md </b>
 ### Steps to characterize synthesis results
+Synthesis is done
+<img src="./Images/53.png"/>
+
 
 
 
