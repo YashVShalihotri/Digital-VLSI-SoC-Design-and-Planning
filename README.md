@@ -344,6 +344,24 @@ Synthesis is done
 <img src="./Images/60.png"/>
 The folder before was empty but now it has results in the sythesis folder in the results directory.
 
+# Day 2 - Good floor planning considerations
+## Chip Floor planning consideration
+### Utilization factor and aspect ratio 
+Die is the cut out silicon from the Silicon Wafer.This die constitues of I/O pads and Core where the whole logic blocks are placed.
+<img src="./Images/61.png"/>
+The width and height of the Core and Die are chosen depending on the Netlist. A netlist describes the connectivity of an electronic design. We take the netlist and map the gates and flops into their physical dimensions, making blocks of them and placing them next to each other.  
+<img src="./Images/64.png"/>
+Let us assume that a standard cell is 1 unit in width and height.So the area it consumes is 1 sq unit.
+<img src="./Images/62.png"/>
+So for a netlist that consists of 2 gates and 2 flops, the area consumed would be 2*2 = 4sq unit.
+### Concept of pre-placed cells
+### De-coupling capacitors
+### Power planning
+### Pin placement and logical cell placement blockage
+### Steps to run floorplan using OpenLANE
+### Review floorplan files and steps to view floorplan/a>
+### Review floorplan layout in Magic
+
 
 
 
