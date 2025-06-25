@@ -364,16 +364,20 @@ So the Utilization factor  = 4/8, which is 50%.<br>
 
 <p> In VLSI physical design, pre-placed cells are special cells that are positioned before the automated placement stage begins. These aren’t your regular logic gates—they serve physical or structural purposes and are fixed in place to guide or protect the rest of the layout.
 The most common types:
-
+<img src="./Images/69.png"/>
 - Well Tap Cells: Prevent latch-up by connecting wells to power/ground.
 - Endcap or Boundary Cells: Protect standard cells at the edges of rows from damage during manufacturing.
 - Spare Cells: Extra logic gates placed in advance for future ECO (Engineering Change Order) fixes.
 - Decap Cells: Help with power integrity by providing decoupling capacitance.
 - Clock Cells: Like clock buffers or muxes, often placed early due to strict timing needs.
 - Macros/IPs: Large blocks like SRAMs or PLLs that must be placed manually due to size and routing constraints.
-These cells are usually marked as fixed so the tool doesn’t move them during optimization. They help ensure a clean, manufacturable, and timing-friendly layout.
-
+These cells are usually marked as fixed, so the tool doesn’t move them during optimization. They help ensure a clean, manufacturable, and timing-friendly layout.
+<b>Defininng Location of Pre placed Cell</b>
+  Big Combinational blocks are broken into small blocks so that they can be treated as individual blocks which helps in optimization of the area.
 </p>
+<p align = "right" width = "500"> <img src="./Images/68.png"/> </p>
+<p width = "500" > <img src="./Images/67.png"/> </p>
+
 ### De-coupling capacitors
 ### Power planning
 ### Pin placement and logical cell placement blockage
