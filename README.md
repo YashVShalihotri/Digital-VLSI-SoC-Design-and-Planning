@@ -316,8 +316,8 @@ This is the working directory for the project.
 The PDK we using is Skywater 130nm and these are all the related files to the PDKs.
 
 ### Design Preparation Step
-<b>docker : Used to get in the docker container</b>
-<b> ./flow.tcl -interactive : This command is used to get in the OpenLANE flow and interactive is used to do the RTL to GDSII flow step by step, as the whole process is automated if we do not use interactive.</b>
+1. <b>docker : Used to get in the docker container.</b>
+2. <b> ./flow.tcl -interactive : This command is used to get in the OpenLANE flow and interactive is used to do the RTL to GDSII flow step by step, as the whole process is automated if we do not use interactive.</b>
 <img src="./Images/48.png"/>
 <img src="./Images/49.png"/>
 This is the <b>picorv32a .tcl</b> file, which tells about the specification of the design we are generating the whole flow for.
