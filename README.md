@@ -336,6 +336,11 @@ This is the GitHub repository for the OpenLane project <b> https://github.com/ef
 ### Steps to characterize synthesis results
 Synthesis is done
 <img src="./Images/53.png"/>
+<img src="./Images/54.png"/>
+1. Number of D flip flops : 1613
+2. Number of cells = 14876
+3. <b>Flop ratio = 1613/14876 = 10.84% </b>
+
 
 
 
