@@ -310,7 +310,10 @@ This section explains basic commands for the Terminal
 5.  <b>clear : </b> Clears the terminal screen.
 
 ### OpenLANE Directory structure in detail
-
+<img src="./Images/46.png"/>
+This is the working directory for the project.
+<img src="./Images/47.png"/>
+The PDK we using is Skywater 130nm and these are all the related files to the PDKs
 ### Design Preparation Step
 ### Review files after design prep and run synthesis
 ### OpenLANE Project Git Link Description
