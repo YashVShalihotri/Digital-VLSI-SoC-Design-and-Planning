@@ -358,14 +358,27 @@ So, for a netlist that consists of 2 gates and 2 flops, the area consumed would 
 
 <img src="./Images/65.png"/>
 So the Utilization factor  = 4/8, which is 50%.<br>
-<b>Aspect Ratio</b> is the ratio of Height/width, so in this case it will be <b>2/4 = 0.5.</b><br>
+<b>Aspect Ratio</b> is the ratio of Height/width, so in this case it will be <b>2/4 = 0.5.</b>
 
 ### Concept of pre-placed cells
+
+<p> In VLSI physical design, pre-placed cells are special cells that are positioned before the automated placement stage begins. These aren’t your regular logic gates—they serve physical or structural purposes and are fixed in place to guide or protect the rest of the layout.
+The most common types:
+
+- Well Tap Cells: Prevent latch-up by connecting wells to power/ground.
+- Endcap or Boundary Cells: Protect standard cells at the edges of rows from damage during manufacturing.
+- Spare Cells: Extra logic gates placed in advance for future ECO (Engineering Change Order) fixes.
+- Decap Cells: Help with power integrity by providing decoupling capacitance.
+- Clock Cells: Like clock buffers or muxes, often placed early due to strict timing needs.
+- Macros/IPs: Large blocks like SRAMs or PLLs that must be placed manually due to size and routing constraints.
+These cells are usually marked as fixed so the tool doesn’t move them during optimization. They help ensure a clean, manufacturable, and timing-friendly layout.
+
+</p>
 ### De-coupling capacitors
 ### Power planning
 ### Pin placement and logical cell placement blockage
 ### Steps to run floorplan using OpenLANE
-### Review floorplan files and steps to view floorplan/a>
+### Review floorplan files and steps to view floorplan
 ### Review floorplan layout in Magic
 
 
