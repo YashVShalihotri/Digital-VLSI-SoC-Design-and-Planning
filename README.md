@@ -373,14 +373,14 @@ The most common types:
 - Macros/IPs: Large blocks like SRAMs or PLLs that must be placed manually due to size and routing constraints.
 These cells are usually marked as fixed, so the tool doesn’t move them during optimization. They help ensure a clean, manufacturable, and timing-friendly layout.
 <b>Defininng Location of Pre placed Cell</b>
-  Big Combinational blocks are broken into small blocks so that they can be treated as individual blocks which helps in optimization of the area.
-</p>
-<br>
+  Big Combinational blocks are broken into small blocks so that they can be treated as individual blocks, which helps in optimization of the area.
+
+
 <p float = "left" > 
   <img src="./Images/68.png" width = "500"/>
   <img src="./Images/67.png" width = "500"/> 
 </p>
-
+</p>
 ### De-coupling capacitors
 ### Power planning
 ### Pin placement and logical cell placement blockage
