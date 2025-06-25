@@ -296,7 +296,26 @@ Fake antenna diodes are placed, as metal wires can act as an Antenna, which can 
 <img src="./Images/41.png"/>
 <img src="./Images/42.png"/>
 <br>All this procedure is done till we reach an optimized design.
-After we reach optimized design, we go for RC Extraction, then STA is done using OpenSTA as the parasitic RC has been extracted, and we can test the design with real clocks. After this,s we do Physical and Timing Verification and then we get the complete GDSII.
+After we reach optimized design, we go for RC Extraction, then STA is done using OpenSTA as the parasitic RC has been extracted, and we can test the design with real clocks. After this, we do Physical and Timing Verification.
+<img src="./Images/44.png"/>
+<img src="./Images/45.png"/>
+This completes the RTL to GDSII flow.
+
+## Get familiar to open-source EDA tools
+This section explains basic commands for the Terminal 
+1. <b>cd </b>: Change directory
+2.  <b>ls -ltr:  </b>gives the list of files and folders in the current directory.
+3.  <b>less :  </b>Opens the file
+4.  <b>pwd :  </b>Tells the current directory.
+5.  <b>clear : </b> Clears the terminal screen.
+
+### OpenLANE Directory structure in detail
+
+### Design Preparation Step
+### Review files after design prep and run synthesis
+### OpenLANE Project Git Link Description
+### Steps to characterize synthesis results
+
 
 
 
