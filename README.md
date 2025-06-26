@@ -541,6 +541,8 @@ In circuit Design, there are two steps.
 
 
 ### Layout design step
+In Layout Design First step is to get the function implemented through the MOS transistor through a set of PMOS and NMOS transistors, and the second step is to get the PMOS network graph and the NMOS network graph out of the design that has been implemented.
+After getting the network graphs next step is to obtain the Euler's path. Eule's path is the path that is traced only once.
 
 ### Typical characterization flow
 
