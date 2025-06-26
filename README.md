@@ -437,10 +437,17 @@ The below image shows the Die Area and the Utilization Factor of the Core.
   <img src="./Images/80.png" width = "500"/> 
 </p>
 In the <b>results/floorplan</b> Directory, we will type the following command to open the magic tool for seeing the floorplan. </br>
+
 <b> magic -T /home/vsduser/Desktop/work/tools/openlane_working_dir/pdks/sky130A/libs.tech/magic/sky130A.tech lef read ../../tmp/merged.lef def read picorv32a.floorplan.def & </b>
 This opens the magic tool with the Floorplan design.
 <img src="./Images/82.png"/> 
+
 ### Review floorplan layout in Magic
+Once we enter in Magic, we can zoom toa  particular cell by pressing the <b>left click and right click </b> to make a rectangle box and then pressing <b> Z key </b> zooms into the cell.
+<img src="./Images/83.png"/> 
+The bottom black lines are the Standard cells that are not placed as in floorplan stage only pre placed cells are placed.
+
+
 
 
 
