@@ -446,6 +446,8 @@ This opens the magic tool with the Floorplan design.
 Once we enter in Magic, we can zoom toa  particular cell by pressing the <b>left click and right click </b> to make a rectangle box and then pressing <b> Z key </b> zooms into the cell.
 <img src="./Images/83.png"/> 
 The bottom black lines are the Standard cells that are not placed as in floorplan stage only pre placed cells are placed.
+In Tkcon.tcl menu we can check the metal layer for the cell like we can see it is in metal 3 layer.
+We can see the buffer that are placed along with the decap cells that are placed for pre placed cells.
 
 
 
