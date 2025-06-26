@@ -476,8 +476,25 @@ Addition of buffers depend on the mathematical equations that takes parasitic RC
 <img src="./Images/89.png"/> 
 
 ### Final placement optimization
+In this section more buffers are added keeping in mind the data slew check and estimate time required to reach the required capture flop.
+<p float = "left" > 
+  <img src="./Images/92.png" width = "500"/>
+  <img src="./Images/93.png" width = "500"/> 
+</p>
+For the final Netlist
+<p float = "left" > 
+  <img src="./Images/94.png" width = "500"/>
+  <img src="./Images/95.png" width = "500"/> 
+</p>
 
 ### Need for libraries and characterization
+<p>
+Every ICdesign Flow needs to go through the several steps. First step to go through is Logic Synthesis, let's say if we have a functionality which is coded in a form of an RTL so first we need to convert the functionality into legal hardware is refered to as Logic Synthesis. Ouput of the logic synthesis is arrangement of gates that will represent the original functionality that has been described using an RTL. Next step of logic synthesis is Floorplaning, in this we omport the output of logic synthesis and decide the size of the Core and Die. The next step after floorplaning is Placement, in this we take the particular logic cell send place them on the chip in such a fashion that initial timing is better. Next step is CTS(Clock tree synthesis), in this we take care that clk should reach each and every signal at the same time also take care of each clk signal has equal rise and fall.Next step is Routing, routing has to go through the certain flow dependendent on the characterization of the flip flop.And now comes the last step STA(Static timing analysis), in this we try to see the set up time, hold time, maximum achieved frequency of the circuit. One common thing across all stages 'GATES or Cells'.
+</p>
+<p float = "left" > 
+  <img src="./Images/96.png" width = "500"/>
+  <img src="./Images/97.png" width = "500"/> 
+</p>
 
 ### Congestion aware placement using RePlAce
 
