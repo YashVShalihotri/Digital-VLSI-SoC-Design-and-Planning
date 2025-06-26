@@ -415,8 +415,16 @@ When Multiple logic switching is happening simultaneously, giving decoupling cap
 <img src="./Images/75.png"/> 
 
 ### Pin placement and logical cell placement blockage
-
+Pin placement refers to the strategic positioning of input/output pins on the periphery of a block or chip. Good pin placement minimizes routing congestion and timing delays by aligning pins close to their logical connections. In hierarchical designs, pin locations might be dictated by top-level constraints, but sometimes block owners have the flexibility to optimize them locally.
+Logical cell placement blockages, on the other hand, are regions where standard cells are restricted from being placed. These blockages help guide the placement tool to avoid congested or sensitive areas. There are two main types:
+1. Hard blockages: Completely prohibit any cell placement.
+2. Soft blockages: Allow only buffers or specific cell types, often used to reserve space for future routing or macro expansion.
+<img src="./Images/76.png"/>
+The clock I/O port is bigger for less resistance, and these I/O ports can be placed in any order such that it optimizes the whole placement.It need not be in same line for one whole logic block.
+<img src="./Images/77.png"/> 
+Blocking of cell placement happens in the I/O pads region such that no block placement happens there.
 ### Steps to run floorplan using OpenLANE
+
 ### Review floorplan files and steps to view floorplan
 ### Review floorplan layout in Magic
 
