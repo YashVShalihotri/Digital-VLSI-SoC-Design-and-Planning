@@ -515,6 +515,10 @@ These are called Standard cells.A library contains many standard cells like thes
   <img src="./Images/103.png" width = "500"/>
   <img src="./Images/104.png" width = "500"/> 
 </p>
+Cell Design is divided in 3 steps:
+1. Inputs :PDKs
+2. Design Steps
+3. Output
 <p float = "left" > 
   <img src="./Images/105.png" width = "500"/>
   <img src="./Images/106.png" width = "500"/> 
@@ -523,22 +527,24 @@ These are called Standard cells.A library contains many standard cells like thes
 Typical library parameters for standard Cells.
 
 
+
 ### Circuit design steps
+User-defined Specifications:
+1. Cell Height: Tells the drive strength depending on the height.The separation between the power rail and the ground rail defines the cell height. Cell width depends upon the timing and drive strength.It is the responsibility of developer to keep this width maintained for the library.
 <img src="./Images/108.png"/> 
-The separation between the power rail and the ground rail defines the cell height. Cell width depends upon the timing and drive strength.It is the responsibility of developer to keep this width maintained for the library.
-<img src="./Images/109.png"/> 
-The library may contain information for a standard cell, for which the  metal line it should be connected to should be metal3,4,5 etc.
+2. Supply Voltage:D epending upon the Noise margin, how much supply voltage is needed that goes in the library development
+3. Metal: If there is a restriction that the library is to be built on a metal layer.The library may contain information for a standard cell, for which the  metal line it should be connected to should be metal3,4,5 etc.
+<img src="./Images/109.png"/>
+4. Pin Locations:The pin location can also be a parameter for which the standard cells would be different in the library.
 <img src="./Images/115.png"/> 
-The pin location can also be a parameter for which the standard cells would be different in the library.
 
-Design involves three steps, which are circuit design, layout design, and characterization.
+Design involves three steps, which are circuit design, layout design, and characterization.Designing is done based on the PDKs given by the foundry keeping in mind to stick with the specifications the foundry has given strictly.
 In circuit Design, there are two steps.
-  1. The first step is to implement the function itself, and the second step is to model the PMOS and NMOS transistors in such a fashion in order to meet the library.
+  1. The first step is to implement the function itself, and the second step is to model the PMOS and NMOS transistors in such a fashion in order to meet the library requirement.
+   <img src="./Images/112.png"/>
   2. The third step is Output. The typical output that we get from the circuit design is a CDL(circuit description language) file, GDSII, LEF, extracted spice netlist(.cir).
- <img src="./Images/112.png"/>
+
  <img src="./Images/113.png"/> 
-
-
 
 ### Layout design step
 In Layout Design First step is to get the function implemented through the MOS transistor through a set of PMOS and NMOS transistors, and the second step is to get the PMOS network graph and the NMOS network graph out of the design that has been implemented.
