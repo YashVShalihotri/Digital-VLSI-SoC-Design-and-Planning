@@ -453,7 +453,18 @@ We can see the buffer that are placed along with the decap cells that are placed
 ## Library building and Placement
 
 ### Netlist binding and initial place design
-
+Binding netlist to physical cells meaning that the logic gates and flops block diagrams have certain physical dimensions so we map them.
+<p float = "left" > 
+  <img src="./Images/84.png" width = "500"/>
+  <img src="./Images/85.png" width = "500"/> 
+</p>
+Physical Cells
+<img src="./Images/86.png"/> 
+Next step is placement where these physical cells are placed onto the floorplan in optimized way such that the input pin is close to the first physical cell and output pin is closest to last cells of the netlist.
+<p float = "left" > 
+  <img src="./Images/87.png" width = "500"/>
+  <img src="./Images/88.png" width = "500"/> 
+</p>
 ### Optimize placement using estimated wire-length and capacitance
 ### Final placement optimization
 ### Need for libraries and characterization
