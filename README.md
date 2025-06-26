@@ -391,6 +391,14 @@ A Decoupling Capacitor helps in providing a Voltage supply, as when the transist
 <img src="./Images/71.png"/> 
 
 ### Power planning
+<img src="./Images/72.png"/> 
+When we use a Single Voltage supply and a Single ground line for the circuit, we have Voltage Droop and Ground bounce problems.
+<p float = "left" > 
+  <img src="./Images/73.png" width = "500"/>
+  <img src="./Images/74.png" width = "500"/> 
+</p>
+When Multiple logic switching is happening simultaneously, giving decoupling capacitor to every logic block is not practical solution so we come up with voltage and ground mesh like structure so that the block can take the voltage from nearby point and can drain the voltage into the ground from nearby area.
+<img src="./Images/75.png"/> 
 ### Pin placement and logical cell placement blockage
 ### Steps to run floorplan using OpenLANE
 ### Review floorplan files and steps to view floorplan
