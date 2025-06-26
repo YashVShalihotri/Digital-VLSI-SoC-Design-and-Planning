@@ -443,11 +443,21 @@ This opens the magic tool with the Floorplan design.
 <img src="./Images/82.png"/> 
 
 ### Review floorplan layout in Magic
-Once we enter in Magic, we can zoom toa  particular cell by pressing the <b>left click and right click </b> to make a rectangle box and then pressing <b> Z key </b> zooms into the cell.
+Once we enter in Magic, we can zoom toa  particular cell by pressing the <b>left click and right click </b> to make a rectangle box and then pressing <b> Z key </b> zooms into the cell.</br>
+<b>Shift +Z key </b> helps in zooming out.
 <img src="./Images/83.png"/> 
 The bottom black lines are the Standard cells that are not placed as in floorplan stage only pre placed cells are placed.
 In Tkcon.tcl menu we can check the metal layer for the cell like we can see it is in metal 3 layer.
 We can see the buffer that are placed along with the decap cells that are placed for pre placed cells.
+
+## Library building and Placement
+
+### Netlist binding and initial place design
+
+### Optimize placement using estimated wire-length and capacitance
+### Final placement optimization
+### Need for libraries and characterization
+### Congestion aware placement using RePlAce
 
 
 
