@@ -424,7 +424,8 @@ The clock I/O port is bigger for less resistance, and these I/O ports can be pla
 <img src="./Images/77.png"/> 
 Blocking of cell placement happens in the I/O pads region such that no block placement happens there.
 ### Steps to run floorplan using OpenLANE
-
+To run Floorplan type the command <b>run_floorplan</b> and it will generate the floorplan.
+<img src="./Images/78.png"/> 
 ### Review floorplan files and steps to view floorplan
 ### Review floorplan layout in Magic
 
