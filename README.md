@@ -524,6 +524,21 @@ Typical library parameters for standard Cells.
 
 
 ### Circuit design steps
+<img src="./Images/108.png"/> 
+The separation between the power rail and the ground rail defines the cell height. Cell width depends upon the timing and drive strength.It is the responsibility of developer to keep this width maintained for the library.
+<img src="./Images/109.png"/> 
+The library may contain information for a standard cell, for which the  metal line it should be connected to should be metal3,4,5 etc.
+<img src="./Images/115.png"/> 
+The pin location can also be a parameter for which the standard cells would be different in the library.
+
+Design involves three steps, which are circuit design, layout design, and characterization.
+In circuit Design, there are two steps.
+  1. The first step is to implement the function itself, and the second step is to model the PMOS and NMOS transistors in such a fashion in order to meet the library.
+  2. The third step is Output. The typical output that we get from the circuit design is a CDL(circuit description language) file, GDSII, LEF, extracted spice netlist(.cir).
+ <img src="./Images/112.png"/>
+ <img src="./Images/113.png"/> 
+
+
 
 ### Layout design step
 
