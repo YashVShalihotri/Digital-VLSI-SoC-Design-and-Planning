@@ -489,7 +489,7 @@ For the final Netlist
 
 ### Need for libraries and characterization
 <p>
-Every ICdesign Flow needs to go through the several steps. First step to go through is Logic Synthesis, let's say if we have a functionality which is coded in a form of an RTL so first we need to convert the functionality into legal hardware is refered to as Logic Synthesis. Ouput of the logic synthesis is arrangement of gates that will represent the original functionality that has been described using an RTL. Next step of logic synthesis is Floorplaning, in this we omport the output of logic synthesis and decide the size of the Core and Die. The next step after floorplaning is Placement, in this we take the particular logic cell send place them on the chip in such a fashion that initial timing is better. Next step is CTS(Clock tree synthesis), in this we take care that clk should reach each and every signal at the same time also take care of each clk signal has equal rise and fall.Next step is Routing, routing has to go through the certain flow dependendent on the characterization of the flip flop.And now comes the last step STA(Static timing analysis), in this we try to see the set up time, hold time, maximum achieved frequency of the circuit. One common thing across all stages 'GATES or Cells'.
+Every ICdesign Flow needs to go through the several steps. First step to go through is Logic Synthesis, we have a functionality which is coded in a form of an RTL so we to convert the functionality into physical cells known as Logic Synthesis.Next step of logic synthesis is Floorplaning, We put the pre placed cells surrounded by decoupling capacitors in this step. The next step after floorplaning is Placement, in this we take the particular logic cell send place them on the chip in such a fashion that initial timing is better. Next step is CTS(Clock tree synthesis), We want every cell to get clock signal at same time so this step takes care of that.Next step is Routing, routing has to go through the certain flow dependendent on the characterization of the flip flop.And now comes the last step STA(Static timing analysis), in this we try to see the set up time, hold time, maximum achieved frequency of the circuit. One common thing across all stages 'GATES or Cells'.
 </p>
 <p float = "left" > 
   <img src="./Images/96.png" width = "500"/>
@@ -497,6 +497,12 @@ Every ICdesign Flow needs to go through the several steps. First step to go thro
 </p>
 
 ### Congestion aware placement using RePlAce
+In this section we place the standard cells that were not placed before in the floorplanning stage.
+<img src="./Images/99.png"/> 
+Zoomed in view looks like this
+The placement is donne in two stages. Global and detailed. In global placement, legalization is not there meaning the cells can overlap but it is done keeping the time as a constraint ,but after detailed placement legalization will be done.Main objective of global placement is to reducing the length of wires,we look at Half parameter wire length (HPW) in OpenLANE.Overflow value should decrease meaning the Placement is going right.
+<img src="./Images/98.png"/> 
+<img src="./Images/100.png"/> 
 
 
 
