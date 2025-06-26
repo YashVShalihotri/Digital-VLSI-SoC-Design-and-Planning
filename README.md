@@ -372,7 +372,7 @@ The most common types:
 5. Clock Cells: Like clock buffers or muxes, often placed early due to strict timing needs.
 6. Macros/IPs: Large blocks like SRAMs or PLLs that must be placed manually due to size and routing constraints.
 These cells are usually marked as fixed, so the tool doesn’t move them during optimization. They help ensure a clean, manufacturable, and timing-friendly layout.
-### Defininng Location of Pre placed Cell
+### Defining Location of Pre-placed Cell
   Big Combinational blocks are broken into small blocks so that they can be treated as individual blocks, which helps in optimization of the area.
 <p float = "left" > 
   <img src="./Images/68.png" width = "500"/>
@@ -380,6 +380,16 @@ These cells are usually marked as fixed, so the tool doesn’t move them during 
 </p>
     
 ### De-coupling capacitors
+<img src="./Images/66.png" width = "500"/> 
+Decoupling capacitors, also referred to as bypass capacitors, are critical components in electronic circuits, particularly in digital and mixed-signal systems. Their primary function is to stabilize the power supply by mitigating voltage fluctuations and suppressing high-frequency noise.
+When a digital integrated circuit (IC) undergoes rapid switching, it generates transient currents that can lead to undesirable voltage drops on the power rail. A decoupling capacitor, placed in close proximity to the IC’s power pins, acts as a localized energy reservoir. It supplies instantaneous current to the IC during switching events, thereby maintaining a stable voltage level.
+A Decoupling Capacitor helps in providing a Voltage supply, as when the transistor switches from zero to one, it needs current, and it increases exponentially when logic switches from 0 to 1 for lot of transistors same for giving ground to all of them.
+<img src="./Images/70.png" width = "500"/> 
+1. Noise margin High gives the range for which the signal is considered as 1 when noise is there.
+2. Noise marhin Low gives the range for which the signal is considered as 0 when noise is there.
+3. Signal in between this is considered random, and it can be either of them, so to avoid this scenario, we use decoupling capacitors.
+<img src="./Images/71.png" width = "500"/> 
+
 ### Power planning
 ### Pin placement and logical cell placement blockage
 ### Steps to run floorplan using OpenLANE
