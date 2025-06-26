@@ -391,20 +391,20 @@ A Decoupling Capacitor helps in providing a Voltage supply, as when the transist
 <img src="./Images/71.png"/> 
 
 ### Power planning
-<p>Power planning is a fundamental phase in VLSI physical design that ensures reliable and efficient power delivery to all components—standard cells, macros, and I/O blocks—within an integrated circuit.
+Power planning is a fundamental phase in VLSI physical design that ensures reliable and efficient power delivery to all components—standard cells, macros, and I/O blocks—within an integrated circuit.
 Objectives of Power Planning
-- Distribute power uniformly across the chip to avoid IR drop and electromigration.
-- Ensure sufficient power delivery to high-demand regions, especially near macros and clocking elements.
-- Optimize metal usage while maintaining design rules and minimizing congestion.
-Key Elements of Power Planning
-- Power Pads: Interface between the external power source and the chip.
-- Trunks: Routes connecting power pads to the core rings.
-- Core Rings: Metal rings (VDD and VSS) surrounding the core, distributing power to the internal regions.
-- Power Stripes: Vertical and horizontal metal lines that carry power from the rings across the chip.
-- Power Rails: Metal 1 level connections that deliver power directly to standard cells.
-- Power Vias: Vertical connections between metal layers to ensure continuity in the power network.
+1. Distribute power uniformly across the chip to avoid IR drop and electromigration.
+2. Ensure sufficient power delivery to high-demand regions, especially near macros and clocking elements.
+3. Optimize metal usage while maintaining design rules and minimizing congestion.
+4. Key Elements of Power Planning
+5. Power Pads: Interface between the external power source and the chip.
+6. Trunks: Routes connecting power pads to the core rings.
+7. Core Rings: Metal rings (VDD and VSS) surrounding the core, distributing power to the internal regions.
+8. Power Stripes: Vertical and horizontal metal lines that carry power from the rings across the chip.
+9. Power Rails: Metal 1-level connections that deliver power directly to standard cells.
+10. Power Vias: Vertical connections between metal layers to ensure continuity in the power network.
 This entire structure forms the Power Distribution Network (PDN), which is typically implemented before placement and routing to avoid congestion and ensure accurate IR drop analysis.
-</p>
+
 <img src="./Images/72.png"/> 
 When we use a Single Voltage supply and a Single ground line for the circuit, we have Voltage Droop and Ground bounce problems.
 <p float = "left" > 
@@ -413,7 +413,9 @@ When we use a Single Voltage supply and a Single ground line for the circuit, we
 </p>
 When Multiple logic switching is happening simultaneously, giving decoupling capacitor to every logic block is not practical solution so we come up with voltage and ground mesh like structure so that the block can take the voltage from nearby point and can drain the voltage into the ground from nearby area.
 <img src="./Images/75.png"/> 
+
 ### Pin placement and logical cell placement blockage
+
 ### Steps to run floorplan using OpenLANE
 ### Review floorplan files and steps to view floorplan
 ### Review floorplan layout in Magic
