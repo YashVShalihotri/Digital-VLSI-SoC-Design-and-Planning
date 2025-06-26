@@ -372,7 +372,7 @@ The most common types:
 5. Clock Cells: Like clock buffers or muxes, often placed early due to strict timing needs.
 6. Macros/IPs: Large blocks like SRAMs or PLLs that must be placed manually due to size and routing constraints.
 These cells are usually marked as fixed, so the tool doesn’t move them during optimization. They help ensure a clean, manufacturable, and timing-friendly layout.
-<b>Defininng Location of Pre placed Cell</b>
+### Defininng Location of Pre placed Cell
   Big Combinational blocks are broken into small blocks so that they can be treated as individual blocks, which helps in optimization of the area.
 <p float = "left" > 
   <img src="./Images/68.png" width = "500"/>
