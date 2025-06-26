@@ -465,9 +465,20 @@ Next step is placement where these physical cells are placed onto the floorplan 
   <img src="./Images/87.png" width = "500"/>
   <img src="./Images/88.png" width = "500"/> 
 </p>
+
 ### Optimize placement using estimated wire-length and capacitance
+In this section,we will optimizing the placement by adding buffers for signal integrity and no time lag.
+<p float = "left" > 
+  <img src="./Images/90.png" width = "500"/>
+  <img src="./Images/89.png" width = "500"/> 
+</p>
+Addition of buffers depend on the mathematical equations that takes parasitic RC as its parameter which gives the delay and we get to know whether it needs a buffer or not.
+<img src="./Images/91.png"/> 
+
 ### Final placement optimization
+
 ### Need for libraries and characterization
+
 ### Congestion aware placement using RePlAce
 
 
