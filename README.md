@@ -497,14 +497,44 @@ Every ICdesign Flow needs to go through the several steps. First step to go thro
 </p>
 
 ### Congestion aware placement using RePlAce
-In this section we place the standard cells that were not placed before in the floorplanning stage.
+In this section, we place the standard cells that were not placed before in the floorplanning stage.
 <img src="./Images/99.png"/> 
 Zoomed in view looks like this
 The placement is donne in two stages. Global and detailed. In global placement, legalization is not there meaning the cells can overlap but it is done keeping the time as a constraint ,but after detailed placement legalization will be done.Main objective of global placement is to reducing the length of wires,we look at Half parameter wire length (HPW) in OpenLANE.Overflow value should decrease meaning the Placement is going right.
 <img src="./Images/98.png"/> 
 <img src="./Images/100.png"/> 
 
+## Cell design and characterization flows
 
+### Inputs for cell design flow
+<img src="./Images/101.png"/> 
+Image of a complete synthesised chip with placement and routing done.
+<img src="./Images/114.png"/> 
+These are called Standard cells.A library contains many standard cells like these.The library stores information about their physical dimensions, delay, Threshold Voltages, drive strength, etc.
+<p float = "left" > 
+  <img src="./Images/103.png" width = "500"/>
+  <img src="./Images/104.png" width = "500"/> 
+</p>
+<p float = "left" > 
+  <img src="./Images/105.png" width = "500"/>
+  <img src="./Images/106.png" width = "500"/> 
+</p>
+<img src="./Images/107.png"/> 
+Typical library parameters for standard Cells.
+
+
+### Circuit design steps
+
+### Layout design step
+
+### Typical characterization flow
+
+
+## General timing characterization parameters
+
+### Timing threshold definitions
+
+### Propagation delay and transition time
 
 
 
