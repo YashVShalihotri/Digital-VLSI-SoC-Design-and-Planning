@@ -423,10 +423,20 @@ Logical cell placement blockages, on the other hand, are regions where standard 
 The clock I/O port is bigger for less resistance, and these I/O ports can be placed in any order such that it optimizes the whole placement.It need not be in same line for one whole logic block.
 <img src="./Images/77.png"/> 
 Blocking of cell placement happens in the I/O pads region such that no block placement happens there.
+
 ### Steps to run floorplan using OpenLANE
 To run Floorplan type the command <b>run_floorplan</b> and it will generate the floorplan.
 <img src="./Images/78.png"/> 
+
 ### Review floorplan files and steps to view floorplan
+To review the floor plan made,we will look into the ioPlacer.log file that is created in the <b>logs/floorplan</b> directory 
+<img src="./Images/81.png"/> 
+The below image shows the Die Area and the Utilization Factor of the Core.
+<p float = "left" > 
+  <img src="./Images/79.png" width = "500"/>
+  <img src="./Images/80.png" width = "500"/> 
+</p>
+
 ### Review floorplan layout in Magic
 
 
