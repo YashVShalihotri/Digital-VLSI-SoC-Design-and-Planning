@@ -560,7 +560,23 @@ Then we make a stick diagram of it. For the Stick A and C, Drain and Source are 
  <img src="./Images/120.png"/> 
  The extracted Spice Netlist tells about the parasitic capacitances. Characterization tells about Timing, Noise, and Power information.
 ### Typical characterization flow
+<img src="./Images/125.png"/> 
+The image is for Inverter and the steps will be to characterize the Inverter cell.
+<img src="./Images/121.png"/> 
 
+<img src="./Images/122.png"/> 
+<img src="./Images/123.png"/> 
+<img src="./Images/124.png"/> 
+1. Read the model file 
+2. Read the extracted Spice Netlist
+3. Recognize the behaviour of buffer
+4. Read the sub-circuit of the inverter
+5. Attach the necessary power sources.
+6. Provide Stimulus input
+7. Provide with output Capacitance
+8. Give Simulation command as.tran or .dc for Transient or DC analysis.
+GUNA is used to get the characterization as all the above inputs will be fed to it in a file format.
+<img src="./Images/126.png"/> 
 
 ## General timing characterization parameters
 
