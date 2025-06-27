@@ -538,7 +538,7 @@ User-defined Specifications:
 4. Pin Locations:The pin location can also be a parameter for which the standard cells would be different in the library.
 <img src="./Images/115.png"/> 
 
-Design involves three steps, which are circuit design, layout design, and characterization.Designing is done based on the PDKs given by the foundry keeping in mind to stick with the specifications the foundry has given strictly.
+Design involves three steps, which are circuit design, layout design, and characterization. Designing is done based on the PDKs given by the founder,y keeping in mind to stick with the specifications the foundry has given strictly.
 In circuit Design, there are two steps.
   1. The first step is to implement the function itself, and the second step is to model the PMOS and NMOS transistors in such a fashion in order to meet the library requirement.
    <img src="./Images/112.png"/>
@@ -549,7 +549,16 @@ In circuit Design, there are two steps.
 ### Layout design step
 In Layout Design First step is to get the function implemented through the MOS transistor through a set of PMOS and NMOS transistors, and the second step is to get the PMOS network graph and the NMOS network graph out of the design that has been implemented.
 After getting the network graphs next step is to obtain the Euler's path. Eule's path is the path that is traced only once.
-
+Like for the given example, the Euler path is A-C-E-F-D-B.
+ <img src="./Images/116.png"/>
+Then we make a stick diagram of it. For the Stick A and C, Drain and Source are connected for pMOS, and for nMOS, both sources are connected.
+ <img src="./Images/117.png"/> 
+ Then this layout is taken in the Magic tool
+ <img src="./Images/118.png"/> 
+ Then we find the parasitic capacitance and do the characterization.
+ <img src="./Images/119.png"/> 
+ <img src="./Images/120.png"/> 
+ The extracted Spice Netlist tells about the parasitic capacitances. Characterization tells about Timing, Noise, and Power information.
 ### Typical characterization flow
 
 
