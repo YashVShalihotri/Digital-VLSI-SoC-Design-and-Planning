@@ -723,14 +723,26 @@ After that Si3N4 is etched.
 For the formation of LDD, we again do ion implantation in the P-well by using mask 7, and here we use phosphorus as an ion for light doping.
 </p>
 <img src="./Images/181.png"/>
-Same process we will repeat for N-well. there we use mask 8 and BOron Ion.
+Same process we will repeat for N-well. There we use mask 8 and Boron Ion.
 <img src="./Images/182.png"/>
-Now, by creating the spacers, we can protect the actual structre remain constant of P-implantt and N-implant. For that we deposite a thick Sio2 or Si3N4 layer over the gate tereminal.
+Now, by creating the spacers, we can protect the actual structure remains constant for P-implant and N-implant. For that we deposit a thick SiO2 or Si3N4 layer over the gate terminal.
 <img src="./Images/183.png"/>
 Now, we do Plasma anisotropic etching. By that side-wall spacers are formed.
 <img src="./Images/184.png"/>
 
 ### Source-drain formation
+Next step is deposite the very thin screen oxide layer to avoid the effect of channeling.
+<img src="./Images/185.png"/>
+Now to form the drain and source, again we do the ion implantation of arsenic at 75kev to create the N+ implant by using mask 9 in the P-well to form PMOS.
+<p float = "left" > 
+  <img src="./Images/186.png" width = "500"/>
+  <img src="./Images/188.png" width = "500"/> 
+</p>
+Same process we will repeat for NMOS by using the mask 10 and boron ion in the N-well at 50kev to creat P- implant.
+<img src="./Images/189.png"/>
+Now we put this Half made CMOS into the high temparature (1000 degree)anneling. So P+ implant and N+ implant now become the source and drain.
+<img src="./Images/192.png"/>
+
 
 ### Local interconnect formation
 
