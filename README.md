@@ -684,7 +684,7 @@ Open the magic tool with the following command <br>
 
 ## Inception of layout ̂A CMOS fabrication process
 ### Create Active regions
-1. Selecting a Substrate: We are taking p-type Silicon substrate with 100 orientation.<br>
+1. Selecting a Substrate: We are taking a p-type Silicon substrate with 100 orientation.<br>
 2. Creating an Active region for transistors.
 <img src="./Images/156.png"/>
   1. 40-nm of SiO2 is grown on the p substrate thermally, and then Si3N4 is deposited onto it for insulation.
