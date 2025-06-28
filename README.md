@@ -803,7 +803,14 @@ If we double-press Y, we can see that it selects the entire thing that it connec
 </p>
 <img src="./Images/217.png">
 
-
 ### Lab steps to create std cell layout and extract spice netlist
-
+To extract the file from here, we have to write the command in tckon window. and the command is <b>extract all<b>
+<img src="./Images/218.png">
+Write the command in tkcon window.
+<img src="./Images/219.png">
+Write the command.
+<p>
+<img src="./Images/220.png" width = "500"/>
+<img src="./Images/221.png" width = "500"/> 
+</p>
 
