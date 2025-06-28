@@ -678,10 +678,36 @@ clone the repository https://github.com/nickson-jose/vsdstdcelldesign.git in the
 <img src="./Images/155.png"/>
 Add the sky130A.tech file in the directory using the command
 <img src="./Images/156.png"/>
-Open the magic tool with the following command 
-magic -T sky130A.tech sky130A_inv.mag &
+Open the magic tool with the following command <br>
+<b>magic -T sky130A.tech sky130A_inv.mag & </b>
 <img src="./Images/157.png"/>
 
+## Inception of layout ̂A CMOS fabrication process
+### Create Active regions
 
+1. Selecting a Substrate: We are taking a p-type Silicon substrate with a 100 orientation.
+2. Creating an Active region for transistors.
+<img src="./Images/156.png"/>
+3. 40-nm of SiO2 is grown on the p substrate thermally, and then Si3N4 is deposited onto it for insulation.
+4. 1-micrometer of Photoresist is deposited onto it, and UV light is shined onto it to make the mask soft where light passes and 
+<img src="./Images/158.png"/>
+<img src="./Images/159.png"/>
+Photoresist is etched.
+After that Si3N4 is etched.
+<p float = "left" > 
+  <img src="./Images/160.png" width = "500"/>
+  <img src="./Images/161.png" width = "500"/> 
+</p>
+7. Field Oxide is grown.
+  <img src="./Images/162.png"/>
+  
+### Formation of N-well and P-well
+### Formation of gate terminal
+### Lightly doped drain (LDD) formation
+### Source-drain formation
+### Local interconnect formation
+### Higher-level metal formation
+### Lab introduction to Sky130 basic layers layout and LEF using inverter
+### Lab steps to create std cell layout and extract spice netlist
 
 
