@@ -646,7 +646,16 @@ For M2 MOSFET drain is connected to out node, gate is connected to in node, NMOS
   <img src="./Images/144.png" width = "500"/>
   <img src="./Images/145.png" width = "500"/> 
 </p>
-
+We give dc analysis command and plug the library which has cmos models.
+<p float = "left" > 
+  <img src="./Images/146.png" width = "500"/>
+  <img src="./Images/147.png" width = "500"/> 
+</p>
+The output graph comes as :
+<img src="./Images/148.png"/>
+When we change the W/L ratio to 3 times for cmos 
+the graph gets shifted to right side.
+<img src="./Images/149.png"/>
 ### SPICE simulation lab for CMOS inverter
 
 ### Switching Threshold Vm
