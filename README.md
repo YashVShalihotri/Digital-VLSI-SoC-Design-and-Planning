@@ -653,7 +653,7 @@ We give dc analysis command and plug the library which has cmos models.
 </p>
 The output graph comes as :
 <img src="./Images/149.png"/>
-When we change the W/L ratio to 3 times for cmos 
+When we change the W/L ratio to 2.5 times for cmos 
 the graph gets shifted to right side.
 <img src="./Images/148.png"/>
 ### SPICE simulation lab for CMOS inverter
