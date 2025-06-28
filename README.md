@@ -592,7 +592,7 @@ In the figure below the term 'Slew_low_rise-thr' depicts the value close to 0. a
 <b>Slew_high_fall_thr</b>
 <img src="./Images/130.png"/> 
 
-Now, taking the waveform of the input stimulus, which is the input to the first buffer, and using that to obtain the output of the first buffer. Similar to a slew, thresholds for delay are also available. For that same reason, we have to take some rise and fall points from the waveforms. These thresholds are almost 50%.
+Now, taking the waveform of the input stimulus, which is the input to the first buffer, and using that to obtain the output of the first buffer. Similar to a slew, thresholds for delay are also available. For that same reason, we have to take some rise and fall points from the waveforms. These thresholds are almost 50%.<br>
 <b>in_rise_thr</b>
 <img src="./Images/131.png"/> 
 <b>in_fall_thr</b>
