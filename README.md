@@ -684,24 +684,24 @@ Open the magic tool with the following command <br>
 
 ## Inception of layout ̂A CMOS fabrication process
 ### Create Active regions
-<p>
-1. Selecting a Substrate: We are taking a p-type Silicon substrate with 100 orientation.
+
+1. Selecting a Substrate: We are taking a p-type Silicon substrate with a 100 orientation.
 2. Creating an Active region for transistors.
 <img src="./Images/156.png"/>
-  1. 40-nm of SiO2 is grown on the p substrate thermally, and then Si3N4 is deposited onto it for insulation.
-  2. 1-micormeter of Photoresist is deposited onto it, and UV light is shined onto it to make the mask soft where light passes.
-  <img src="./Images/158.png"/>
-  <img src="./Images/159.png"/>
-  3. Photoresist is etched.
-  4. Si3N4 is etched
+3. 40-nm of SiO2 is grown on the p substrate thermally, and then Si3N4 is deposited onto it for insulation.
+4. 1-micrometer of Photoresist is deposited onto it, and UV light is shined onto it to make the mask soft where light passes.
+<img src="./Images/158.png"/>
+<img src="./Images/159.png"/>  
+5. Photoresist is etched.
+6. Si3N4 is etched
    <p float = "left" > 
   <img src="./Images/160.png" width = "500"/>
   <img src="./Images/161.png" width = "500"/> 
 </p>
-  5. Field Oxide is grown.
+7. Field Oxide is grown.
   <img src="./Images/162.png"/>
 
-</p>  
+  
 ### Formation of N-well and P-well
 ### Formation of gate terminal
 ### Lightly doped drain (LDD) formation
