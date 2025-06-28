@@ -622,7 +622,11 @@ Let's say we have the waveform to understand the slew calculation.
 ## Labs for CMOS inverter ngspice simulations
 
 ### IO placer revision
-
+Till now, we have done floor planning and run placement also. But if we want to change the floorplanning, for example, in our floor planning, pins are at equal distance, and if we want to change it, then we can also make it by the Set command.
+First, we need to check the switches in the configuration and take the syntax "env(FP_IO_MODE) 1". Then, we need to change it to "env(FP_IO_MODE) 2". After that, we can run the floorplanning again.
+Then check the changes in the pins' location through magic -T.
+<img src="./Images/140.png"/>
+So, here we can see that there are no pins in the upper half side. all pins are in the lower half of the core.
 ### SPICE deck creation for CMOS inverter
 
 ### SPICE simulation lab for CMOS inverter
