@@ -626,8 +626,26 @@ Till now, we have done floor planning and run placement also. But if we want to 
 First, we need to check the switches in the configuration and take the syntax "env(FP_IO_MODE) 1". Then, we need to change it to "env(FP_IO_MODE) 2". After that, we can run the floorplanning again.
 Then check the changes in the pins' location through magic -T.
 <img src="./Images/140.png"/>
-So, here we can see that there are no pins in the upper half side. all pins are in the lower half of the core.
+So, here we can see that there are no pins on the upper half side. All pins are in the lower half of the core.
 ### SPICE deck creation for CMOS inverter
+<b>VTC- SPICE simulations:</b>
+A SPICE deck has the connectivity information about the netlist. It has inputs that are provided to the simulation, and the deck points that will take the output.
+Component connectivity:- In this, we need to define the connectivity of the substrate pin. Substrate pin tunes the threshold voltage of the PMOS and NMOS.
+<img src="./Images/141.png"/>
+Component values:- Values for the PMOS nad NMOS. We have taken the same size of both PMOS and NMOS.
+<img src="./Images/142.png"/>
+Identify the nodes:- Node mean the points between which there is a component.These nodes are required to define the netlist.
+<img src="./Images/143.png"/>
+Name the nodes:- Now we wiil name these nodes as Vin, Vss, Vdd, out.
+<img src="./Images/143.png"/>
+Now we will start writing the SPICE deck. It's written like shown below
+Drain- Gate- Substrate- Source
+For M1 MOSFET drain is connected to out node, gate is connected to in node, PMOS transistor substrate and Source is connected to Vdd node.
+For M2 MOSFET drain is connected to out node, gate is connected to in node, NMOS source and substrate are connected to 0.
+<p float = "left" > 
+  <img src="./Images/144.png" width = "500"/>
+  <img src="./Images/145.png" width = "500"/> 
+</p>
 
 ### SPICE simulation lab for CMOS inverter
 
