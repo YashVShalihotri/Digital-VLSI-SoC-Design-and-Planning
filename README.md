@@ -674,7 +674,8 @@ The graph Time vs Voltage will be plotted here from where we can calculate the r
 <img src="./Images/152.png"/>
 
 ### Lab steps to git clone vsdstdcelldesign
-
+clone the repository https://github.com/nickson-jose/vsdstdcelldesign.git in the openlane directory.
+<img src="./Images/155.png"/>
 
 
 
