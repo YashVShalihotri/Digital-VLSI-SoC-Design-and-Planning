@@ -758,11 +758,39 @@ Next step is to create the reaction between Ti layer and source, gate, drain of 
 Now by using mask 11 and photoresist, we will etched out the TIN and make perticular contacts. TIN is etched out by using RCA cleaning.
 <img src="./Images/200.png"/>
 Now, local interconnects are formed after etching and removing the photoresist.
+<p float = "left" > 
 <img src="./Images/201.png" width = "500"/>
 <img src="./Images/202.png" width = "500"/> 
-
+</p>
 
 ### Higher-level metal formation
+Higher level metal formation:- These steps are very similar like the previous steps. The first thing we are noticing is that the surface is non-planar. It is not advisable to use this type of non-planner surface for metal interconnects due to the problems associated with metal discontinuity. so, we have to planarize the surface by depositing a thick layer of SiO2 with some impurity to make a less resistive layer. And then we used the CMP (chemical mechanical polishing) technique to planarize the surface.
+<p float = "left" > 
+<img src="./Images/203.png" width = "500"/>
+<img src="./Images/204.png" width = "500"/> 
+</p>
+Now using mask 12 and photoresist, we etched the SiO2 layer to deposit the metal in it.
+<p>
+<img src="./Images/205.png" width = "500"/>
+<img src="./Images/206.png" width = "500"/> 
+</p>
+We deposit a tungsten layer like a blanket on it, followed by CMP.
+<p>
+<img src="./Images/207.png" width = "500"/>
+<img src="./Images/208.png" width = "500"/> 
+</p>
+After that, Aluminium is deposited as the first Layer of metal contact.
+<img src="./Images/209.png"/>
+Then we use Mask 14 for more depositions.
+<img src="./Images/210.png">
+Then we deposit SiO2 followed by CMP to prepare it for Si3N4 deposition.
+<p>
+<img src="./Images/211.png" width = "500"/>
+<img src="./Images/212.png" width = "500"/> 
+</p>
+Finally we get the desired CMOS.
+
+<img src="./Images/213.png">
 
 ### Lab introduction to Sky130 basic layers layout and LEF using inverter
 
