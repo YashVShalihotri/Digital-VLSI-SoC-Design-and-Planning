@@ -712,11 +712,22 @@ After that Si3N4 is etched.
 1. Gate formation:- The Gate terminal is the most important terminal of the PMOS and NMOS because from the gate terminal only we can control the threshold voltage. Doping concentration and oxide capacitance will control the threshold voltage.<img src="./Images/172.png"/>
 2. We are maintaining the doping concentration here. For that, we use mask 4 and again do the ion implantation of boron ions at lower energy (~60kev).<img src="./Images/173.png"/><img src="./Images/174.png"/>
 3. Same as we do with Arsenic to make a lightly doped surface for an n-well.<img src="./Images/175.png"/><img src="./Images/176.png"/>
-4. We deposit 0.4-micrometer-thick polysilicon layer.<img src="./Images/178.png"/>
+4. We deposit a 0.4-micrometer-thick polysilicon layer.<img src="./Images/178.png"/>
 5. This is how it looks for Mask 6 in Layout <img src="./Images/179.png"/>
 6. We end up getting this after removing the photoresist. <img src="./Images/180.png"/>
-### Lightly doped drain (LDD) formation
 
+### Lightly doped drain (LDD) formation
+<p>LDD formation:- Here, we actually want P+, P- ,N doping profile in the PMOS and N+ ,N- ,P doping profile for NMOS. The reason for that is
+<b>Hot electron effect</b>
+<b>Short channel effect</b>
+For the formation of LDD, we again do ion implantation in the P-well by using mask 7, and here we use phosphorus as an ion for light doping.
+</p>
+<img src="./Images/181.png"/>
+Same process we will repeat for N-well. there we use mask 8 and BOron Ion.
+<img src="./Images/182.png"/>
+Now, by creating the spacers, we can protect the actual structre remain constant of P-implantt and N-implant. For that we deposite a thick Sio2 or Si3N4 layer over the gate tereminal.
+<img src="./Images/183.png"/>
+Now, we do Plasma anisotropic etching. By that side-wall spacers are formed.
 ### Source-drain formation
 
 ### Local interconnect formation
