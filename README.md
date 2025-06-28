@@ -617,7 +617,21 @@ Let's say we have the waveform to understand the slew calculation.
 </p>
 <img src="./Images/139.png"/>
 
+# Day 3 - Design library cell using Magic Layout and ngspice characterization
 
+## Labs for CMOS inverter ngspice simulations
+
+### IO placer revision
+
+### SPICE deck creation for CMOS inverter
+
+### SPICE simulation lab for CMOS inverter
+
+### Switching Threshold Vm
+
+### Static and dynamic simulation of CMOS inverter
+
+### Lab steps to git clone vsdstdcelldesign
 
 
 
