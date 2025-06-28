@@ -729,6 +729,7 @@ Now, by creating the spacers, we can protect the actual structre remain constant
 <img src="./Images/183.png"/>
 Now, we do Plasma anisotropic etching. By that side-wall spacers are formed.
 ### Source-drain formation
+<img src="./Images/184.png"/>
 
 ### Local interconnect formation
 
