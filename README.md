@@ -709,12 +709,22 @@ After that Si3N4 is etched.
 5. To make a deep well, put the Substrate in High high-temperature furnace. 1100C for 4-6hrs. <img src="./Images/171.png"/>
 
 ### Formation of gate terminal
-
+1. Gate formation:- The Gate terminal is the most important terminal of the PMOS and NMOS because from the gate terminal only we can control the threshold voltage. Doping concentration and oxide capacitance will control the threshold voltage.<img src="./Images/172.png"/>
+2. We are maintaining the doping concentration here. For that, we use mask 4 and again do the ion implantation of boron ions at lower energy (~60kev).<img src="./Images/173.png"/><img src="./Images/174.png"/>
+3. Same as we do with Arsenic to make a lightly doped surface for an n-well.<img src="./Images/175.png"/><img src="./Images/176.png"/>
+4. We deposit 0.4-micrometer-thick polysilicon layer.<img src="./Images/178.png"/>
+5. This is how it looks for Mask 6 in Layout <img src="./Images/179.png"/>
+6. We end up getting this after removing the photoresist. <img src="./Images/180.png"/>
 ### Lightly doped drain (LDD) formation
+
 ### Source-drain formation
+
 ### Local interconnect formation
+
 ### Higher-level metal formation
+
 ### Lab introduction to Sky130 basic layers layout and LEF using inverter
+
 ### Lab steps to create std cell layout and extract spice netlist
 
 
