@@ -676,6 +676,11 @@ The graph Time vs Voltage will be plotted here from where we can calculate the r
 ### Lab steps to git clone vsdstdcelldesign
 clone the repository https://github.com/nickson-jose/vsdstdcelldesign.git in the openlane directory.
 <img src="./Images/155.png"/>
+Add the sky130A.tech file in the directory using the command
+<img src="./Images/156.png"/>
+Open the magic tool with the following command 
+magic -T sky130A.tech sky130A_inv.mag &
+<img src="./Images/157.png"/>
 
 
 
