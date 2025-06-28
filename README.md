@@ -804,7 +804,7 @@ If we double-press Y, we can see that it selects the entire thing that it connec
 <img src="./Images/217.png">
 
 ### Lab steps to create std cell layout and extract spice netlist
-To extract the file from here, we have to write the command in tckon window. and the command is <b>extract all<b>
+To extract the file from here, we have to write the command in tckon window. and the command is <b>extract all</b>
 <img src="./Images/218.png">
 Write the command in tkcon window.
 <img src="./Images/219.png">
@@ -816,6 +816,7 @@ Write the command.
 
 ## Sky130 Tech File Labs
 ### Lab steps to create final SPICE deck using Sky130 tech
+
 <img src="./Images/221.png">
 Here, we can see all the details about the connectivity of the NMOS and PMOS and about the power supply also.
 X0 is NMOS and X1 is PMOS and both's connectivity is shown as GATE DRAIN SUBSTATE SOURCE.
