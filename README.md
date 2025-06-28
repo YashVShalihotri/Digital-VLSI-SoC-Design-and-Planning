@@ -745,6 +745,22 @@ Now we put this Half made CMOS into the high temparature (1000 degree)anneling. 
 
 
 ### Local interconnect formation
+First step is remove the thin screen oxide layer by etching. Then deposite the titanium (Ti) using sputtering. here Ti is used because Ti has very low resistivity.
+<p float = "left" > 
+  <img src="./Images/194.png" width = "500"/>
+  <img src="./Images/195.png" width = "500"/> 
+</p>
+Next step is to create the reaction between Ti layer and source, gate, drain of CMOS. For that wafer is heated at about 650-700 degree temparature in N2 ambient for about 60 seconds. and after reaction, we can see the titanium siliside over the wafer. One more reaction is heppend there between Ti and N. and it results the TIN which is used for local communication.
+<p float = "left" > 
+  <img src="./Images/198.png" width = "500"/>
+  <img src="./Images/199.png" width = "500"/> 
+</p>
+Now by using mask 11 and photoresist, we will etched out the TIN and make perticular contacts. TIN is etched out by using RCA cleaning.
+<img src="./Images/200.png"/>
+Now, local interconnects are formed after etching and removing the photoresist.
+<img src="./Images/201.png" width = "500"/>
+<img src="./Images/202.png" width = "500"/> 
+
 
 ### Higher-level metal formation
 
