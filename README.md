@@ -702,7 +702,14 @@ After that Si3N4 is etched.
   <img src="./Images/162.png"/>
   
 ### Formation of N-well and P-well
+1. We coat the Substrate with photoresist and put a mask on one side to isolate only one side of the whole substrate. <img src="./Images/165.png"/>
+2. Then we etch the photoresist and put Boron at 200keV to make a p-type well.  <img src="./Images/167.png"/>
+3. Repeat the photoresist process and put the mask for the other half.  <img src="./Images/168.png"/>
+4. Add Phosphorus to make an n-type well. <img src="./Images/169.png"/>
+5. To make a deep well, put the Substrate in High high-temperature furnace. 1100C for 4-6hrs. <img src="./Images/171.png"/>
+
 ### Formation of gate terminal
+
 ### Lightly doped drain (LDD) formation
 ### Source-drain formation
 ### Local interconnect formation
