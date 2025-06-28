@@ -793,6 +793,16 @@ Finally we get the desired CMOS.
 <img src="./Images/213.png">
 
 ### Lab introduction to Sky130 basic layers layout and LEF using inverter
+In sky130, every color shows a different layer. Here the first layer is for local interconnect, shown by blue_purple color, thenthe  second layer is metal 1 which is shown by light purple color, and the metal 2 is shown by pink color. N-well is shown by solid dash line. Green is the N-diffusion region, and red is for polysilicon gate. similarly the brown color is for P-diffusion.
+In tckon window, we can see that the selected area is NMOS and similarly we can chech PMOS also. and that is how we can check that the CMOS is working or not.
+<img src="./Images/214.png">
+If we double-press Y, we can see that it selects the entire thing that it connects to.
+<p>
+<img src="./Images/215.png" width = "500"/>
+<img src="./Images/216.png" width = "500"/> 
+</p>
+<img src="./Images/217.png">
+
 
 ### Lab steps to create std cell layout and extract spice netlist
 
