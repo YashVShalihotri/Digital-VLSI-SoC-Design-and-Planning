@@ -691,16 +691,15 @@ Open the magic tool with the following command <br>
 3. 40-nm of SiO2 is grown on the p substrate thermally, and then Si3N4 is deposited onto it for insulation.
 4. 1-micrometer of Photoresist is deposited onto it, and UV light is shined onto it to make the mask soft where light passes.
 <img src="./Images/158.png"/>
-<img src="./Images/159.png"/>  
+<img src="./Images/159.png"/>
 5. Photoresist is etched.
-6. Si3N4 is etched
-   <p float = "left" > 
+6. Si3N4 is etched.
+<p float = "left" > 
   <img src="./Images/160.png" width = "500"/>
   <img src="./Images/161.png" width = "500"/> 
 </p>
 7. Field Oxide is grown.
   <img src="./Images/162.png"/>
-
   
 ### Formation of N-well and P-well
 ### Formation of gate terminal
