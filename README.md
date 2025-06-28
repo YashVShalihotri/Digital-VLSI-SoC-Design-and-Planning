@@ -659,8 +659,19 @@ the graph gets shifted to right side.
 ### SPICE simulation lab for CMOS inverter
 
 ### Switching Threshold Vm
-
+Switching threshold, Vm (the point at which the device switches the level), is one of the parameters that define the robustness of the Inverter. Switching threshold is a point at which Vin=Vout.
+At this point, both transistors are on and in the Saturation region, so there is a lot of leakage current.
+<img src="./Images/149.png"/>
+<img src="./Images/150.png"/>
 ### Static and dynamic simulation of CMOS inverter
+In Dynamic simulation we will know about the rise and fall delay of CMOS inverter and how does it varying with Vm. In this simulation everything else will remian same except the input which is provided will be a pulse and simulation command will be .tran
+The graph Time vs Voltage will be plotted here from where we can calculate the rise and fall delay.
+<img src="./Images/151.png"/>
+<p float = "left" > 
+  <img src="./Images/153.png" width = "500"/>
+  <img src="./Images/154.png" width = "500"/> 
+</p>
+<img src="./Images/152.png"/>
 
 ### Lab steps to git clone vsdstdcelldesign
 
