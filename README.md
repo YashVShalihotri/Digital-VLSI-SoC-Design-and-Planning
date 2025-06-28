@@ -820,9 +820,15 @@ Write the command.
 Here, we can see all the details about the connectivity of the NMOS and PMOS and about the power supply also.
 X0 is NMOS and X1 is PMOS and both's connectivity is shown as GATE DRAIN SUBSTATE SOURCE.
 We will change the width to 0.01 as it's the box value in Layout.
+Change X0 to M1000 and X1 to M1001
+<img src="./Images/223.png">
+Change the file same as the above
+<img src="./Images/222.png">
+Write the command same as the above to run ngspice
 
 
 ### Lab steps to characterize inverter using sky130 model files
+
 
 ### Lab introduction to Magic tool options and DRC rules
 
