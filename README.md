@@ -581,7 +581,26 @@ GUNA is used to get the characterization as all the above inputs will be fed to 
 ## General timing characterization parameters
 
 ### Timing threshold definitions
+As seen in the previous section we have inverter connected back to back, we have power sources, we have the stimulus applied to the inverter all these things brings a very important point of understanding differenet threshold points of a waveform itself and it is called as "Timing threshold definitions'.
+In the figure below the term 'Slew_low_rise-thr' depicts the value close to 0. and the typically value of this is about 20% it could be 30% as well.
+<b>Slew_low_rise-thr</b>
+<img src="./Images/135.png"/> 
+<b>Slew_high_rise_thr</b>
+<img src="./Images/128.png"/> 
+<b>Slew_low_fall_thr</b>
+<img src="./Images/129.png"/> 
+<b>Slew_high_fall_thr</b>
+<img src="./Images/130.png"/> 
 
+Now, taking the waveform of the input stimulus, which is the input to the first buffer, and using that to obtain the output of the first buffer. Similar to a slew, thresholds for delay are also available. For that same reason, we have to take some rise and fall points from the waveforms. These thresholds are almost 50%.
+<b>in_rise_thr</b>
+<img src="./Images/131.png"/> 
+<b>in_fall_thr</b>
+<img src="./Images/132.png"/> 
+<b>out_rise_thr</b>
+<img src="./Images/133.png"/> 
+<b>out_fall_thr</b>
+<img src="./Images/134.png"/> 
 ### Propagation delay and transition time
 
 
