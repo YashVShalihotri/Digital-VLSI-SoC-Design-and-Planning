@@ -852,12 +852,31 @@ Calculate the rise and fall time
 <img src="./Images/230.png" />
 
 ### Lab introduction to Magic tool options and DRC rules
-
-
+<img src="./Images/234.png" />
+To know more about the Magic DRC we can go to the website:- http://opencircuitdesign.com/magic/Technologyfiles/TheMagicTechnologyFileManual/DrcSection
+Link to Google_Skywaters Design Rules: - https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html
+For reference , we can use the github repo of Google-Skywater: - https://github.com/google/skywater-pdk
 ### Lab introduction to Sky130 pdk's and steps to download labs
+Go to the home directory.
+To download the lab files for performing DRC corrections:
+<img src="./Images/232.png" />
+wget http://opencircuitdesign.com/open_pdks/archive/drc_tests.tgz
+To extract the lab files from the downloaded file:
+tar xfz drc_tests.tgz
+Then go inside the lab folder drc_tests.
+To list all the directories, we can use the command ls -al.
+To view the .magicrc file, we can use the command gvim .magicrc. This file serves as the startup script for magic and tells it where to find the technology file. The technology file is already available locally in the same directory, so we can make changes to it if needed.
+To start the magic tool with better graphics, we can use the command magic -d XR &.
 
 ### Lab introduction to Magic and steps to load Sky130 tech-rules
-
+Use the command <b>magic -d XR</b>
+To open the magic tool. Select the met3.mag file from the file menu.
+<img src="./Images/235.png" />
+type drc why in the tkcon menu 
+<img src="./Images/236.png" />
+Type cif see VIA2
+black boxes will come on the design we just created.
+<img src="./Images/237.png" />
 ### Lab exercise to fix poly.9 error in Sky130 tech-file
 
 ### Lab exercise to implement poly resistor spacing to diff and tap
