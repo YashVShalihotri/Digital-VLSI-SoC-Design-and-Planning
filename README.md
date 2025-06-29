@@ -917,7 +917,16 @@ From the track file we will add the x,y,origin x,y and put it in the grid comman
 <img src="./Images/251.png" />
 Now we can see that, the ports has been placed at the intersection of the tracks. But between the boundaries, 3 boxes are covered. so our second requirment also satisfies here.
 ### Lab steps to convert magic layout to std cell LEF
-
+<img src="./Images/254.png" />
+Go to Edit and select Text menu and then fill the box accordingly as in the image.
+After this, we will create a .lef file.
+<img src="./Images/252.png" />
+Save it as in the menu box.
+<img src="./Images/253.png" />
+Now, we open this file in the magic by the command
+<b>magic -T sky130A.tech sky130_vsdinv.mag &</b>
+Copy the file in the directory like in the Image.
+<img src="./Images/255.png" />
 ### Introduction to timing libs and steps to include new cell in synthesis
 
 ### Introduction to delay tables
