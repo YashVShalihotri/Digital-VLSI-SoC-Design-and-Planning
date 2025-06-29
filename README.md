@@ -837,19 +837,22 @@ And use the command <b> plot y vs time a </b>
 <img src="./Images/224.png">
 Calculate the rise and fall time 
 1. Rise time: It is the time taken for the output waveform to 20% value to 80% value.
+  2.20364-2.1614 = 42.24ps
 <img src="./Images/225.png" />
 <img src="./Images/226.png" /> 
-</p>
-2.20364-2.1614 = 42.24ps
+</p> 
 2. Fall time: It is the time taken by the output to transition from 80% to 20%.
+  4.06819-4.04041 = 27.78ps
 <img src="./Images/229.png" />
-
 3. propagation delay: It is the time difference between 50% of the input and 50% of the output.
+2.18453-2.15 = 34.53ps
 <img src="./Images/230.png" />
 4. Cell fall delay: It is the  time for the output falling to 50% and the input rising to 50%.
-
+4.05432-4.04997 = 4.35ps
+<img src="./Images/230.png" />
 
 ### Lab introduction to Magic tool options and DRC rules
+
 
 ### Lab introduction to Sky130 pdk's and steps to download labs
 
