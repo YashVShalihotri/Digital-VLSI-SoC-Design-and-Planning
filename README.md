@@ -886,9 +886,39 @@ We will add the missing line of code in sky130.tech file in the drc directory.
 After changing the code,type check drc in the tkcon window.
 <img src="./Images/241.png" />
 
-
 ### Lab exercise to implement poly resistor spacing to diff and tap
-
+<img src="./Images/244.png" />
+Changed the file by adding the highlighted command
+<img src="./Images/243.png" />
+Made the structure.
 ### Lab challenge exercise to describe DRC error as geometrical construct
-
+<img src="./Images/245.png" />
+Changed the file again.
+<img src="./Images/246.png" />
+Made the structure.
+<img src="./Images/247.png" />
 ### Lab challenge to find missing or incorrect rules and fix them
+Now we will open the magic tool and execute the commands drc style drc(full) and drc check.
+<img src="./Images/248.png" />
+
+# Day 4 - Pre-layout timing analysis and importance of good clock tree
+## Timing modeling using delay tables
+
+
+### Lab steps to convert grid info to track info
+Now, we need to generate the .lef file from the corresponding .mag file so it can be integrated into the picorv32a flow.
+When creating standard cells, certain design guidelines must be followed:
+Input and output ports should be placed at the intersections of vertical and horizontal routing tracks.
+The width of the standard cell must be an odd multiple of the horizontal track pitch, and the height must be an odd multiple of the vertical track pitch.
+To determine the exact track pitches, you can refer to the track configuration file located at:
+pdk/sky130/libs.tech/openlane/sky130_fd_sc_hd/track.info
+<img src="./Images/249.png" />
+From the track file we will add the x,y,origin x,y and put it in the grid command to increase the grid size in the layout.
+<img src="./Images/251.png" />
+
+### Lab steps to convert magic layout to std cell LEF
+### Introduction to timing libs and steps to include new cell in synthesis
+### Introduction to delay tables
+### Delay table usage Part 1
+### Delay table usage Part 2
+### Lab steps to configure synthesis settings to fix slack and include vsdinv
