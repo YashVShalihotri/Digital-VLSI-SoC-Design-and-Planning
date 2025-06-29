@@ -925,10 +925,13 @@ Save it as in the menu box.
 <img src="./Images/253.png" />
 Now, we open this file in the magic by the command
 <b>magic -T sky130A.tech sky130_vsdinv.mag &</b>
+
+### Introduction to timing libs and steps to include new cell in synthesis
 Copy the file in the directory like in the Image.
 <img src="./Images/255.png" />
-### Introduction to timing libs and steps to include new cell in synthesis
-
+<img src="./Images/256.png" />
+This the file that we just created.
+<img src="./Images/257.png" />
 ### Introduction to delay tables
 
 ### Delay table usage Part 1
