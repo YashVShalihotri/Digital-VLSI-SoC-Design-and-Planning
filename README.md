@@ -830,7 +830,19 @@ Write the command same as the above to run ngspice
 
 ### Lab steps to characterize inverter using sky130 model files
 
-
+Changing the values in the .spice to these values.
+<img src="./Images/228.png">
+Use the command <b>ngspice sky130_inv.spice</b>
+And use the command <b> plot y vs time a </b>
+<img src="./Images/224.png">
+Calculate the rise and fall time 
+1. Rise time: It is the time taken for the output waveform to 20% value to 80% value.
+<img src="./Images/220.png" />
+<img src="./Images/221.png" /> 
+</p>
+2. Fall time: It is the time taken by the output to transition from 80% to 20%.
+3. propagation delay: It is the time difference between 50% of the input and 50% of the output.
+4. Cell fall delay: It is the  time for the output falling to 50% and the input rising to 50%.
 ### Lab introduction to Magic tool options and DRC rules
 
 ### Lab introduction to Sky130 pdk's and steps to download labs
