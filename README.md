@@ -840,9 +840,15 @@ Calculate the rise and fall time
 <img src="./Images/225.png" />
 <img src="./Images/226.png" /> 
 </p>
+2.20364-2.1614 = 42.24ps
 2. Fall time: It is the time taken by the output to transition from 80% to 20%.
+<img src="./Images/229.png" />
+
 3. propagation delay: It is the time difference between 50% of the input and 50% of the output.
+<img src="./Images/230.png" />
 4. Cell fall delay: It is the  time for the output falling to 50% and the input rising to 50%.
+
+
 ### Lab introduction to Magic tool options and DRC rules
 
 ### Lab introduction to Sky130 pdk's and steps to download labs
