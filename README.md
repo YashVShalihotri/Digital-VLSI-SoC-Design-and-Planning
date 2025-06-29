@@ -907,18 +907,23 @@ Now we will open the magic tool and execute the commands drc style drc(full) and
 
 ### Lab steps to convert grid info to track info
 Now, we need to generate the .lef file from the corresponding .mag file so it can be integrated into the picorv32a flow.
-When creating standard cells, certain design guidelines must be followed:
-Input and output ports should be placed at the intersections of vertical and horizontal routing tracks.
-The width of the standard cell must be an odd multiple of the horizontal track pitch, and the height must be an odd multiple of the vertical track pitch.
-To determine the exact track pitches, you can refer to the track configuration file located at:
-pdk/sky130/libs.tech/openlane/sky130_fd_sc_hd/track.info
+Important Guidelines:
+1. Input and output ports should be placed at the intersections of vertical and horizontal routing tracks.
+2. The width of the standard cell must be an odd multiple of the horizontal track pitch, and the height must be an odd multiple of the vertical track pitch.
+Check the track.info file from the Source
+<b>pdk/sky130/libs.tech/openlane/sky130_fd_sc_hd/track.info</b><br>
 <img src="./Images/249.png" />
 From the track file we will add the x,y,origin x,y and put it in the grid command to increase the grid size in the layout.
 <img src="./Images/251.png" />
-
+Now we can see that, the ports has been placed at the intersection of the tracks. But between the boundaries, 3 boxes are covered. so our second requirment also satisfies here.
 ### Lab steps to convert magic layout to std cell LEF
+
 ### Introduction to timing libs and steps to include new cell in synthesis
+
 ### Introduction to delay tables
+
 ### Delay table usage Part 1
+
 ### Delay table usage Part 2
+
 ### Lab steps to configure synthesis settings to fix slack and include vsdinv
