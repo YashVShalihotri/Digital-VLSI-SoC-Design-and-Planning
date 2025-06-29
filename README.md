@@ -837,8 +837,8 @@ And use the command <b> plot y vs time a </b>
 <img src="./Images/224.png">
 Calculate the rise and fall time 
 1. Rise time: It is the time taken for the output waveform to 20% value to 80% value.
-<img src="./Images/220.png" />
-<img src="./Images/221.png" /> 
+<img src="./Images/225.png" />
+<img src="./Images/226.png" /> 
 </p>
 2. Fall time: It is the time taken by the output to transition from 80% to 20%.
 3. propagation delay: It is the time difference between 50% of the input and 50% of the output.
