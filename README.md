@@ -878,6 +878,14 @@ Type cif see VIA2
 black boxes will come on the design we just created.
 <img src="./Images/237.png" />
 ### Lab exercise to fix poly.9 error in Sky130 tech-file
+Now, we will open the poly.mag file in the magic tool with the help of the command load poly.mag in the tkcon terminal.
+<img src="./Images/238.png" />
+We will add the missing line of code in sky130.tech file in the drc directory.
+<img src="./Images/240.png" />
+<img src="./Images/242.png" />
+After changing the code,type check drc in the tkcon window.
+<img src="./Images/241.png" />
+
 
 ### Lab exercise to implement poly resistor spacing to diff and tap
 
