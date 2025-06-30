@@ -994,7 +994,12 @@ type expand in the Tkcon menu
 ## Timing analysis with ideal clocks using openSTA
 
 ### Setup timing analysis and introduction to flip-flop setup time
-
+Let's start the setup analysis with the ideal clock(single clock). specifications of the clock is
+clock frequency =1 GHz
+clock period =1 ns
+The combinational delay is θ and the time period is T.For signal to reach correctly the delay should be less than T.Inside the D flop there are MUX and it takes time for the input to settle down which is kmown as SET-UP time.Hence finite time 's' required before clk edge for 'D' to reach Qm.
+So, now θ<T becomes θ<(T-S) where s is set-up time.
+<img src="./Images/277.png" /> <img src="./Images/278.png" />
 ### Introduction to clock jitter and uncertainty
 
 ### Lab steps to configure OpenSTA for post-synth timing analysis
