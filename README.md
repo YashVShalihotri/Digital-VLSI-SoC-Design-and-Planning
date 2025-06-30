@@ -856,6 +856,7 @@ Calculate the rise and fall time
 To know more about the Magic DRC we can go to the website:- http://opencircuitdesign.com/magic/Technologyfiles/TheMagicTechnologyFileManual/DrcSection
 Link to Google_Skywaters Design Rules: - https://skywater-pdk.readthedocs.io/en/main/rules/periphery.html
 For reference , we can use the github repo of Google-Skywater: - https://github.com/google/skywater-pdk
+
 ### Lab introduction to Sky130 pdk's and steps to download labs
 Go to the home directory.
 To download the lab files for performing DRC corrections:
@@ -877,6 +878,7 @@ type drc why in the tkcon menu
 Type cif see VIA2
 black boxes will come on the design we just created.
 <img src="./Images/237.png" />
+
 ### Lab exercise to fix poly.9 error in Sky130 tech-file
 Now, we will open the poly.mag file in the magic tool with the help of the command load poly.mag in the tkcon terminal.
 <img src="./Images/238.png" />
@@ -916,6 +918,8 @@ Check the track.info file from the Source
 From the track file we will add the x,y,origin x,y and put it in the grid command to increase the grid size in the layout.
 <img src="./Images/251.png" />
 Now we can see that, the ports has been placed at the intersection of the tracks. But between the boundaries, 3 boxes are covered. so our second requirment also satisfies here.
+
+
 ### Lab steps to convert magic layout to std cell LEF
 <img src="./Images/254.png" />
 Go to Edit and select Text menu and then fill the box accordingly as in the image.
@@ -927,15 +931,40 @@ Now, we open this file in the magic by the command
 <b>magic -T sky130A.tech sky130_vsdinv.mag &</b>
 
 ### Introduction to timing libs and steps to include new cell in synthesis
-Copy the file in the directory like in the Image.
-<img src="./Images/255.png" />
-<img src="./Images/256.png" />
-This the file that we just created.
-<img src="./Images/257.png" />
+1. Copy the file in the directory like in the Image.
+  <img src="./Images/255.png" />
+  <img src="./Images/256.png" />
+  This is the file that we just created.
+  <img src="./Images/257.png" />
+2. Change the config.tcl file in the picorv32a folder to this.
+  <p float = "left">
+    <img src="./Images/257.png" width ="500"/>
+    <img src="./Images/257.png" width ="500"/>
+  </p>
+  <img src="./Images/261.png" />
+3. Copy these files in the designated folder as in the Image.
+4. <b>Use the command prep -design picorv32a -tag 24-06_17-52 -overwrite </b>
+<img src="./Images/258.png" />
+5. Use command Run_floorplan and run_synthesis 
+
 ### Introduction to delay tables
+Power Aware CTS:- We can Gate the Clock with this,If we pass input 1 and Clock in AND gate then it will only pass when both are 1.Similarly if we use input 0 and Clock for OR gate then it will not pass if clock is zero.So the advantage of this blocking period is that we can save lot of power in clock tree.
+ <img src="./Images/262.png" />
+  <img src="./Images/265.png" />
+  We have made some assumptions that for each buffer the input output Capacitance is same but it is not.
+
+So because of this variation in output and input we will have varity of delays.To calculate this we will use Delay tables.
 
 ### Delay table usage Part 1
-
+For practical example let's say we have the input transition of 40ps of buffer1 the output capacitance of this particular buffer is 60ff. The delay of the cell in this case is lies between x9-x10.
+So the values which are not available in the delay table those are extrapolated from the given data so we can take the range in that case.
+ <img src="./Images/267.png" />
+ 
 ### Delay table usage Part 2
-
+Now we have to calculate the delay of buffer 2 and after that we can find the latency at the 4 clock end points.
+Here input transition is common for both the buffers. now assuming that the transition is around the 60psec and load at both the buffers is 50fF. so it will give the delay of y15.
+The total delay from input to the output is= x9' + y15.(Here we are ignoring the delay of the wires). that means the skew at the any output point is zero.
+If load is not same at the every nodes, the skew will not be the zero.
+So if the load of the lower buffer was y17 then the delay would be x9'+y17.
+ <img src="./Images/269.png" />
 ### Lab steps to configure synthesis settings to fix slack and include vsdinv
