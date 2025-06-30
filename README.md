@@ -1009,11 +1009,13 @@ For the above image the delay is calculated based on CLOCK-Q delay and the estim
 
 ### Lab steps to configure OpenSTA for post-synth timing analysis
 Make these files.
-1. pre_sta.config <img src="./Images/278.png" />
-2. my_base.sdc File <img src="./Images/278.png" />
-3. Use command sta pre_sta.config in openlane directory <img src="./Images/278.png" />
+1. pre_sta.config <img src="./Images/283.png" />
+2. my_base.sdc File <img src="./Images/284.png" />
+3. Use command sta pre_sta.config in openlane directory <img src="./Images/285.png" />
 ### Lab steps to optimize synthesis to reduce setup violations
-
+in the Openlane Flow use the command
+1. set ::env(SYNTH_MAX_FANOUT) 4
+2. run_synthesis <img src="./Images/286.png" />
 ### Lab steps to do basic timing ECO
 
 
