@@ -1017,8 +1017,25 @@ in the Openlane Flow use the command
 1. set ::env(SYNTH_MAX_FANOUT) 4
 2. run_synthesis <img src="./Images/286.png" />
 ### Lab steps to do basic timing ECO
+To reduce the slack we will replace the gate which has driving strenth of 2 but driving 4
+Using the command replace_cell _14514_ sky130_fd_sc_hd__or3_4 
+<img src="./Images/287.png" />
+ The slack got reduces
+<img src="./Images/288.png" />
 
+## Clock tree synthesis TritonCTS and signal integrity
+### Clock tree routing and buffering using H-Tree algorithm
+### Crosstalk and clock net shielding
+### Lab steps to run CTS using TritonCTS
+### Lab steps to verify CTS runs
 
+## Timing analysis with real clock using openSTA
+
+### Setup timing analysis using real clocks
+### Hold timing analysis using real clocks
+### Lab steps to analyze timing with real clocks using OpenSTA
+### Lab steps to execute OpenSTA with right timing libraries and CTS assignment
+### Lab steps to observe impact of bigger CTS buffers on setup and hold timing
     
  
 
