@@ -976,9 +976,27 @@ Write the commands in the following order
 4. echo $::env(SYNTH_SIZING)
 5. set ::env(SYNTH_SIZING) 1
 6. echo $::env(SYNTH_DRIVING_CELL)
-7. run_synthesis
-<p float = "left">
-    <img src="./Images/271.png" width ="400"/>
-    <img src="./Images/272.png" width ="400"/>
-    <img src="./Images/273.png" width ="400"/>
-  </p>
+7. run_synthesis <p float = "left">
+      <img src="./Images/271.png" width ="400"/>
+      <img src="./Images/272.png" width ="400"/>
+      <img src="./Images/273.png" width ="400"/>
+    </p>
+8. It will cause error for floorplan so write these commands.
+9. init_floorplan
+10. place_io
+11. tap_decap_or  <img src="./Images/277.png" />
+12. Use the above command to open the magic window
+<img src="./Images/274.png" />
+<img src="./Images/275.png" />
+type expand in the Tkcon menu
+<img src="./Images/276.png" />
+
+
+
+
+    
+ 
+
+ 
+  
+
