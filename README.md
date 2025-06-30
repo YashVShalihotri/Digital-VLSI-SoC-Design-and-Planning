@@ -1006,8 +1006,12 @@ Since the PLL generates the Clock Signal so there can be uncertainity as to when
 <img src="./Images/280.png" /> <img src="./Images/281.png" /> 
 And hence we add another time window valled Setup uncertainity SU.
 For the above image the delay is calculated based on CLOCK-Q delay and the estimate wire delay to reach from Launch Flop to Capture Flop.
-### Lab steps to configure OpenSTA for post-synth timing analysis
 
+### Lab steps to configure OpenSTA for post-synth timing analysis
+Make these files.
+1. pre_sta.config <img src="./Images/278.png" />
+2. my_base.sdc File <img src="./Images/278.png" />
+3. Use command sta pre_sta.config in openlane directory <img src="./Images/278.png" />
 ### Lab steps to optimize synthesis to reduce setup violations
 
 ### Lab steps to do basic timing ECO
