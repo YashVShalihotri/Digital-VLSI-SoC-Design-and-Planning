@@ -1024,21 +1024,127 @@ Using the command replace_cell _14514_ sky130_fd_sc_hd__or3_4
 <img src="./Images/288.png" />
 
 ## Clock tree synthesis TritonCTS and signal integrity
+
 ### Clock tree routing and buffering using H-Tree algorithm
+<img src="./Images/289.png" />If we connect all the blocks without any rules there would be skew or time lag in reaching all the blocks at same time.
+So we use H-tree algorithm where we traverse half distance between two blocks and then give buffer and connect it to the blocks.
+<img src="./Images/290.png" /> <img src="./Images/291.png" />
+Since the physical length of wire is significant we need to add buffers in the correct places.
+<img src="./Images/293.png" />
 ### Crosstalk and clock net shielding
+Since the clock signal is critical path if there is some cross-talk between clock signal and some other block transitioning from zero to one it can cause huge delay or can corrupt the whole memory for some critical chip in automobile.To tackle this issue the clock paths are shielded so it does not create any problem for the clock path.
+<p float = "left">
+<img src="./Images/295.png" width ="500"/>
+<img src="./Images/296.png" width ="500"/>
+</p>
+
 ### Lab steps to run CTS using TritonCTS
+First we need to replace the old synthesis file after we have improved the slack.
+<img src="./Images/303.png" />
+We will use this file to run synthesis now.
+1. init_floorplan
+2. place_io
+3. tap_decap_or
+4. run_placement
+5. run_cts
+6. This will create a cts file in the synthesis folder.
+<img src="./Images/304.png" />
+
 ### Lab steps to verify CTS runs
+OPENROAD To create a database in OPENROAD using LEF and TMP files, we can use the following commands:
+First, make sure we are in the directory where the LEF and TMP files are located.
+Then, enter the following command to start the OPENROAD tool,
+openroad
+Once you are in the OPENROAD tool, enter the following command to create the database,
+For Reading lef file
+read_lef /openLANE_flow/designs/picorv32a/runs/24-06_17-52/tmp/merged.lef
+For Reading def file
+read_def /openLANE_flow/designs/picorv32a/runs/24-06_17-52/results/cts/picorv32a.cts.def
+To Create an OpenROAD database file named pico_cts.db
+write_db pico_cts.db
+Now we can see this database file is present in openlane directory.
+<img src="./Images/305.png" />
 
 ## Timing analysis with real clock using openSTA
 
 ### Setup timing analysis using real clocks
+With real clocks we have buffers and the delay comes from the PLL to the launch flop aswell.
+<img src="./Images/306.png" />
+So for Setup analysis,we need to consider the time in the below way,
+<img src="./Images/307.png" />
+"1+2"=∆1 and "1+3+4"=∆2 and (∆1-∆2)=skew 
+As for Hold analysis it is opposite of Setup time,the arrival time should be more than Hold time.
+Hold timing analysis:- Here we are sending the first pulse to both the launch FLop and capture flop.
+Hold condition state that Hold time (H)< combinational delay (θ). So, (θ>H).
+<img src="./Images/308.png" /> <img src="./Images/309.png" />
+
 ### Hold timing analysis using real clocks
+<img src="./Images/310.png" />
+Le us consider the following clock path.
+<img src="./Images/312.png" />
+<img src="./Images/313.png" />
+Then we will be considering the delay due to physcial wire and delay due to the buffer so ∆1 and ∆2 tells us that.
 ### Lab steps to analyze timing with real clocks using OpenSTA
+We will use openroad to use the following command to run the rest of the OpenFlow
+1. To load the created db file in Openroad <b>read_db pico_cts.db</b> 
+2. To read the netlist post CTS <b> read_verilog /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/synthesis/picorv32a.synthesis_cts.v </b>
+3. To read the library for design <b>read_liberty $::env(LIB_SYNTH_COMPLETE)</b>
+4. To link the design and library <b>link_design picorv32a</b>
+5. To read the custom sdc we have created <b>read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc</b>
+6. To setting all clocks as propagated clocks <b>set_propagated_clock [all_clocks]</b>
+7. To Generate the custom timing report <b>report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4</b>
+8. To exit from Openlane flow <b>exit</b>
+
+<img src="./Images/315.png" />
+<img src="./Images/316.png" />
+
 ### Lab steps to execute OpenSTA with right timing libraries and CTS assignment
+<p></p>
+<b>To remove sky130_fd_sc_hd__clkbuf_1 from the list </b>
+
+set ::env(CTS_CLK_BUFFER_LIST) [lreplace $::env(CTS_CLK_BUFFER_LIST) 0 0]
+
+<b>To check the current value of CTS_CLK_BUFFER_LIST</b>
+
+echo $::env(CTS_CLK_BUFFER_LIST)
+
+<b>To check the current value of CURRENT_DEF</b>
+
+echo $::env(CURRENT_DEF)
+
+<b>To set def as placement def</b>
+
+set ::env(CURRENT_DEF) /openLANE_flow/designs/picorv32a/runs/02-04_05-27/results/placement/picorv32a.placement.def
+
+<b>To run cts</b>
+
+run_cts
+
+<b>To check the current value of CTS_CLK_BUFFER_LIST</b>
+
+echo $::env(CTS_CLK_BUFFER_LIST)
+</p>
+
 ### Lab steps to observe impact of bigger CTS buffers on setup and hold timing
     
- 
+Now we will follow the same commands we have used earlier to run OPENROAD,
 
+1. openroad
+2. read_lef /openLANE_flow/designs/picorv32a/runs/24-06_17-52/tmp/merged.lef
+3. read_def /openLANE_flow/designs/picorv32a/runs/24-06_17-52/results/cts/picorv32a.cts.def
+4. write_db pico_cts1.db
+5. read_db pico_cts.db
+6. read_verilog /openLANE_flow/designs/picorv32a/runs/24-06_17-52/results/synthesis/picorv32a.synthesis_cts.v
+7. read_liberty $::env(LIB_SYNTH_COMPLETE)
+8. link_design picorv32a
+9. read_sdc /openLANE_flow/designs/picorv32a/src/my_base.sdc
+10. set_propagated_clock [all_clocks]
+11. report_checks -path_delay min_max -fields {slew trans net cap input_pins} -format full_clock_expanded -digits 4
+12. report_clock_skew -hold
+13. report_clock_skew -setup
+14. exit
+<img src="./Images/318.png" />
+<img src="./Images/319.png" />
  
   
 
