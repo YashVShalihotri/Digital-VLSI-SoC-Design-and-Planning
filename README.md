@@ -991,7 +991,17 @@ Write the commands in the following order
 type expand in the Tkcon menu
 <img src="./Images/276.png" />
 
+## Timing analysis with ideal clocks using openSTA
 
+### Setup timing analysis and introduction to flip-flop setup time
+
+### Introduction to clock jitter and uncertainty
+
+### Lab steps to configure OpenSTA for post-synth timing analysis
+
+### Lab steps to optimize synthesis to reduce setup violations
+
+### Lab steps to do basic timing ECO
 
 
     
