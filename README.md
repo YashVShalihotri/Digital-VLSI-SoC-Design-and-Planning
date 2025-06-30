@@ -1017,7 +1017,11 @@ in the Openlane Flow use the command
 1. set ::env(SYNTH_MAX_FANOUT) 4
 2. run_synthesis <img src="./Images/286.png" />
 ### Lab steps to do basic timing ECO
-
+To reduce the slack we will replace the gate which has driving strenth of 2 but driving 4
+Using the command replace_cell _14514_ sky130_fd_sc_hd__or3_4 
+<img src="./Images/287.png" />
+ The slack got reduces
+<img src="./Images/288.png" />
 
     
  
