@@ -999,11 +999,19 @@ clock frequency =1 GHz
 clock period =1 ns
 The combinational delay is θ and the time period is T.For signal to reach correctly the delay should be less than T.Inside the D flop there are MUX and it takes time for the input to settle down which is kmown as SET-UP time.Hence finite time 's' required before clk edge for 'D' to reach Qm.
 So, now θ<T becomes θ<(T-S) where s is set-up time.
-<img src="./Images/277.png" /> <img src="./Images/278.png" />
+<img src="./Images/278.png" /> <img src="./Images/279.png" />
+
 ### Introduction to clock jitter and uncertainty
+Since the PLL generates the Clock Signal so there can be uncertainity as to when the pulse can come this window of time is called clock jitter.
+<img src="./Images/280.png" /> <img src="./Images/281.png" /> 
+And hence we add another time window valled Setup uncertainity SU.
+For the above image the delay is calculated based on CLOCK-Q delay and the estimate wire delay to reach from Launch Flop to Capture Flop.
 
 ### Lab steps to configure OpenSTA for post-synth timing analysis
-
+Make these files.
+1. pre_sta.config <img src="./Images/278.png" />
+2. my_base.sdc File <img src="./Images/278.png" />
+3. Use command sta pre_sta.config in openlane directory <img src="./Images/278.png" />
 ### Lab steps to optimize synthesis to reduce setup violations
 
 ### Lab steps to do basic timing ECO
