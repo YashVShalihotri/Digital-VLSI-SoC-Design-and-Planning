@@ -968,3 +968,17 @@ If load is not same at the every nodes, the skew will not be the zero.
 So if the load of the lower buffer was y17 then the delay would be x9'+y17.
  <img src="./Images/269.png" />
 ### Lab steps to configure synthesis settings to fix slack and include vsdinv
+We will add our sky130_vsdinv file in the picorv32a design.
+Write the commands in the following order
+1. echo $::env(SYNTH_STRATEGY)
+2. set ::env(SYNTH_STRATEGY) "DELAY 3"
+3. echo $::env(SYNTH_BUFFERING)
+4. echo $::env(SYNTH_SIZING)
+5. set ::env(SYNTH_SIZING) 1
+6. echo $::env(SYNTH_DRIVING_CELL)
+7. run_synthesis
+<p float = "left">
+    <img src="./Images/271.png" width ="400"/>
+    <img src="./Images/272.png" width ="400"/>
+    <img src="./Images/273.png" width ="400"/>
+  </p>
