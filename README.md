@@ -1,45 +1,46 @@
 Notes Summarized for the Workshop held between 18th June and 1st July 2025
-[Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK](#day-1---inception-of-open-source-eda-openlane-and-sky130-pdk)
-### How to talk to computers
-1. Introduction to QFN-48 Package, chip, pads, core, die and IPs
-2. Introduction to RISC-V
-3. From Software Applications to Hardware
-### Soc design and OpenLANE
-1. Introduction to all components of open-source digital asic design
-2. Simplified RTL2GDS flow
-3. Introduction to OpenLANE and Strive chipsets
-4. Introduction to OpenLANE detailed ASIC design flow
-### Get familiar to open-source EDA tools
-1. OpenLANE Directory structure in detail
-2. Design Preparation Step
-3. Review files after design prep and run synthesis
-4. OpenLANE Project Git Link Description
-5. Steps to characterize synthesis results
-## [Day 2 - Good floor planning considerations](#day-2---good-floor-planning-considerations)
-### Chip Floor planning consideration
-1. Utilization factor and aspect ratio
-2. Concept of pre-placed cells
-3. De-coupling capacitors
-4. Power planning
-5. Pin placement and logical cell placement blockage
-6. Steps to run floorplan using OpenLANE
-7. Review floorplan files and steps to view floorplan/a>
-8. Review floorplan layout in Magic
-### Library building and Placement
-1. Netlist binding and initial place design
-2. Optimize placement using estimated wire-length and capacitance
-3. Final placement optimization
-4. Need for libraries and characterization
-5. Congestion aware placement using RePlAce
-### Cell design and characterization flows
-1. Inputs for cell design flow
-2. Circuit design steps
-3. Layout design step
-4. Typical characterization flow
-### General timing characterization parameters
-1. Timing threshold definitions
-2. Propagation delay and transition time
-## Day 3 - Design library cell using Magic Layout and ngspice characterization
+## Table of Content
+- [Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK](#day-1---inception-of-open-source-eda-openlane-and-sky130-pdk)
+  <b>How to talk to computers
+  1. Introduction to QFN-48 Package, chip, pads, core, die and IPs
+  2. Introduction to RISC-V
+  3. From Software Applications to Hardware
+  ### Soc design and OpenLANE
+  1. Introduction to all components of open-source digital asic design
+  2. Simplified RTL2GDS flow
+  3. Introduction to OpenLANE and Strive chipsets
+  4. Introduction to OpenLANE detailed ASIC design flow
+  ### Get familiar to open-source EDA tools
+  1. OpenLANE Directory structure in detail
+  2. Design Preparation Step
+  3. Review files after design prep and run synthesis
+  4. OpenLANE Project Git Link Description
+  5. Steps to characterize synthesis results
+- [Day 2 - Good floor planning considerations](#day-2---good-floor-planning-considerations)
+  ### Chip Floor planning consideration
+  1. Utilization factor and aspect ratio
+  2. Concept of pre-placed cells
+  3. De-coupling capacitors
+  4. Power planning
+  5. Pin placement and logical cell placement blockage
+  6. Steps to run floorplan using OpenLANE
+  7. Review floorplan files and steps to view floorplan/a>
+  8. Review floorplan layout in Magic
+  ### Library building and Placement
+  1. Netlist binding and initial place design
+  2. Optimize placement using estimated wire-length and capacitance
+  3. Final placement optimization
+  4. Need for libraries and characterization
+  5. Congestion aware placement using RePlAce
+  ### Cell design and characterization flows
+  1. Inputs for cell design flow
+  2. Circuit design steps
+  3. Layout design step
+  4. Typical characterization flow
+  ### General timing characterization parameters
+  1. Timing threshold definitions
+  2. Propagation delay and transition time
+[Day 3 - Design library cell using Magic Layout and ngspice characterization](#day-3---design-library-cell-using-magic-layout-and-ngspice-characterization)
 ### Labs for CMOS inverter ngspice simulations
 1. IO placer revision
 2. SPICE deck creation for CMOS inverter
