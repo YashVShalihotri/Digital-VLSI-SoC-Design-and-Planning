@@ -1151,26 +1151,138 @@ Now we will follow the same commands we have used earlier to run OPENROAD,
 ## Routing and design rule check (DRC)
 
 ### Introduction to Maze Routing-Lee’s algorithm
+<p>
+<img src="./Images/320.png" />
+For this Layout, we will be doing Routing and DRC analysis.
+Routing:- It is finding the shortest possible connection between two end points. We want as less number of turns as possible.
+<img src="./Images/321.png" />
+So between point 1 and point 2 we will be finding the best possible way to connect these points.
+In Lee's Algorithm, the whole Layout is divided into small grids, and numbers are given from the Source to the Target.
+<img src="./Images/322.png" />
+</p>
+
 
 ### Lee’s Algorithm conclusion
+<p>
+  For Source initially number 1 is given and the number increases for its horizontal and vertical neighbours but not diagonally.
+<p float = "left">
+  <img src="./Images/323.png" width ="500" />
+   <img src="./Images/324.png" width ="500" />
+</p>
+Since the latter one has fewer turn, it is preferred over the first one.
+Similarly, we will consider different Flops this time.
+<img src="./Images/325.png" />
+<p float = "left">
+  <img src="./Images/327.png" width ="500" />
+   <img src="./Images/328.png" width ="500" />
+  So the first one would be considered as less bending of wires.
+</p>
+
+</p>
 
 ### Design Rule Check
+DRC stands for Design  Rule Check, and these are certain rules that need to be kept in mind when doing Physical Design, as these rules tell whether the design can be fabricated in foundry or not.
+<p float = "left">
+  <img src="./Images/329.png" width ="500" />
+   <img src="./Images/330.png" width ="500" />
+  So the first one would be considered as less bending of wires.
+</p>
+We will look at these close wires.
+1. Wire Width: Due to the limit of Photolithography, we can't make certain patterns below certain width. <img src="./Images/331.png" />
+2. Wire Pitch: Smaller pitch allows for higher routing density, which is crucial in advanced nodes, whereas Larger pitch improves signal integrity and reduces crosstalk, but consumes more area.  <img src="./Images/332.png" />
+3. Wire Spacing: Minimum spacing is required; otherwise, it will be shorted in the fabrication process.  <img src="./Images/333.png" />
+Let us take a look at another kind of DRC Violation.
+ <img src="./Images/334.png" />
+ In this, we see the metal lines are getting shorted.
+ So we use two different metal lines where the top one is thicker as it offers less resistance.
+ <img src="./Images/335.png" />
+  Need to check for Via Width :<img src="./Images/336.png" />
+  Need to check for Via Spacing:<img src="./Images/337.png" />
+
+### Parasitic Extraction
+Since all the metal lines are having parasitic resistances and capacitances it is extracted to get better timining.
+ <img src="./Images/338.png" />
 
 ## Power Distribution Network and routing
 
+
 ### Lab steps to build power distribution network
 
+1. <b>docker</b>
+2. <b>./flow.tcl -interactive</b>
+3. <b>package require openlane 0.9</b>
+4. <b>prep -design picorv32a -tag 24-06_17-52 </b> [Does not Overwrite]
+5. <b>echo $::env(CURRENT_DEF)</b>  [Tells at what stage we are in the Flow]
+
+So, till here we have done CTS and now we are going to do the routing. but before routing we have to generate the PDN(power distribution network)file by using the command.
+<img src="./Images/339.png" />
+
+gen_pdn
+<img src="./Images/340.png" />
+
 ### Lab steps from power straps to std cell power
+ <img src="./Images/341.png" />
+The red lines are Power Lines and the blue ones are ground Lines. The bordering and corner yellow pads are I/O pads from where we are getting the Power and Ground Supplies, and the green region consists of the Standard Cells.
+We have vertical and horizontal tracks, which ensure that the power is being transferred from the ring to the chip. This is shown by the red and blue colors. This is how power planning works in the physical design of any device.
 
 ### Basics of global and detail routing and configure TritonRoute
+Now we will be doing Routing.
+Use the command run_routing in the OpenLane flow.
+<img src="./Images/355.png" />
+1. For Global Routing: FastRoute is used.
+2. For Detailed Routing: TritonRoute is used.
 
 ## TritonRoute Features
 
 ### TritonRoute feature 1 - Honors pre-processed route guides
+<img src="./Images/342.png" />
+In the Global route, the routing region is devided into the rectangular grids cells as shown in the figure above. And it is represented as cores 3D routing graph. Global route is done by FAST route engine.The detailed route is done by TritonRoute engine. A,B,C,D are four pins which we want to connect through routing. and this whole image of A,B,C,D shows the net.
+<b>Features of TritonRoute</b>
+<img src="./Images/343.png" />
+<img src="./Images/345.png" />
+Metal 1 Line has direction preference in the Vertical Direction and Metal 2 Line has direction preference in the Horizontal Direction.
+1. Splitting happens in the preferred Direction so in the Image(b) we can see the splitting of horizontal metal lines.
+2. In the image(c),merging happens of these unit width wire with the preference Direction line.
+3. The guides shown in blue (M1) and red (M2) initially have gaps between them after splitting and merging.
+<ul>
+Bridging ensures that these pieces are connected logically and geometrically, often by:
+<li>Creating vertical connections (vias) between metal layers (e.g., M1 ↔ M2)</li>
+<li>Adding small guide boxes between segments to form a continuous path</li>
+<li>It resolves potential routing discontinuities so that the detailed router doesn't misinterpret the layout as unconnected.</li>
+</ul>
 
 ### TritonRoute Feature2 & 3 - Inter-guide connectivity and intra- & inter-layer routing
-
+<img src="./Images/346.png" />
+<img src="./Images/347.png" />
 ### TritonRoute method to handle connectivity
-
+INPUTS:-LEF
+OUTPUTS:-detailed routing solution with optimized wire-length and via count
+CONSTRAINTS:-Route guide honouring, connectivity constraints, and design rules.
+<img src="./Images/348.png" />
+<img src="./Images/349.png" />
 ### Routing topology algorithm and final files list post-route  
+<img src="./Images/351.png" />
+The routing is done with zero Violation.
+<img src="./Images/344.png" />
+We will go to SPEF_EXTRACTOR 
+<img src="./Images/352.png" />
+1. Take the LEF file
+2. Take the DEF file
+3. Plug it in the code
+We get the .spef File
+<img src="./Images/356.png" />
+Run the Following Command to open the final generated Layout.
+<img src="./Images/353.png" />
+Final Layout.
+<img src="./Images/356.png" />
+
+## References
+1. https://github.com/efabless/OpenLane/blob/master/README.md 
+2. https://github.com/google/skywater-pdk
+3. https://github.com/nickson-jose/vsdstdcelldesign
+
+## Acknowledgement
+I express my gratitude to Mr. Kunal Ghosh, Co-founder of VLSI System Design (VSD) Corp. Pvt. Ltd., Mohamed Shalan from efabless.com, and Mr. Nickson Jose for their guidance and for this workshop named the DIGITAL-VLSI-SOC-DESIGN-AND-PLANNING. The workshop was excellent, and I got to know a lot about the whole RTL to GDSII flow and how it can be implemented using various open-source tools that are embedded in the flow, OpenLANE.
+
+
 
