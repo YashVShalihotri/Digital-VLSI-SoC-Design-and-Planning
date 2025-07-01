@@ -1,5 +1,5 @@
 Notes Summarized for the Workshop held between 18th June and 1st July 2025
-## [Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK](day-1-inception-of-open-source-eDA-openLANE-and-sky130-pDK)
+## [Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK](day-1---inception-of-open-source-eda-openlane-and-sky130-pdk)
 ### How to talk to computers
 1. Introduction to QFN-48 Package, chip, pads, core, die and IPs
 2. Introduction to RISC-V
