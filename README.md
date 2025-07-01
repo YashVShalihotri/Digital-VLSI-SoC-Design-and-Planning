@@ -1274,7 +1274,7 @@ We get the .spef File
 Run the Following Command to open the final generated Layout.
 <img src="./Images/353.png" />
 Final Layout.
-<img src="./Images/356.png" />
+<img src="./Images/354.png" />
 
 ## References
 1. https://github.com/efabless/OpenLane/blob/master/README.md 
