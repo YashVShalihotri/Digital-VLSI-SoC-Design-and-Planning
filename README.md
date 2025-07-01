@@ -148,13 +148,13 @@ Chip components:
 <p align = "center">
   <img src="./Images/6.png" width="500" />
 </p>
-The aboce image shows different parts that makes a working chip which consists of PLL,ADC,DAC RISC-V SoC,SRAM which can be classified in :
+The above image shows different parts that make a working chip ,which consists of PLL,ADC,DAC RISC-V SoC,SRAM which can be classified in :
 <ul>
   <li><b> Macros:</b> Predefined functional Blocks that can be used for creating certain logic.For example :RISC-V Soc Architecture, SPI </li>
    <li><b>IPs:</b> Intellectual Property, which is outsourced from vendors and is fully optimized to be used in the Chip, as it is not necessary to make these designs again and again.For example, SDRAM,PLL,ADC,DAC</li>
 </ul>
 
-### Introduction to RISC-V
+### Introduction to RISCV
 RISC-V ISA (Instruction Set Architecture)
 This stands for Reduced Instruction Set Computer V, where V means the generation.
 It is an open-source, free-to-use architecture type that supports 32, 64, and 128-bit architectures.
