@@ -94,10 +94,10 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
      - [Lab steps to analyze timing with real clocks using OpenSTA](#lab-steps-to-analyze-timing-with-real-clocks-using-opensta)
      - [Lab steps to execute OpenSTA with right timing libraries and CTS assignment](#lab-steps-to-execute-opensta-with-right-timing-libraries-and-cts-assignment)
      - [Lab steps to observe impact of bigger CTS buffers on setup and hold timing](#lab-steps-to-observe-impact-of-bigger-cts-buffers-on-setup-and-hold-timing)
-- [Day 5 - Final step for RTL2GDS using tritinRoute and openSTA](#day-5---final-step-for-rtl2gds-using-tritinroute-and-opensta)
+- [Day 5 - Final step for RTL2GDS using tritonRoute and openSTA](#day-5---final-step-for-rtl2gds-using-tritonroute-and-opensta)
   - [Routing and design rule check (DRC)](#routing-and-design-rule-check-drc)
-     - [Introduction to Maze Routing Lees algorithm](#introduction-to-maze-routing--lee-algorithm)
-     - [Lees Algorithm conclusion](#lees-algorithm-conclusion)
+     - [Introduction to Maze Routing Lee's algorithm](#introduction-to-maze-routing-lees-algorithm)
+     - [Lee's Algorithm conclusion](#lees-algorithm-conclusion)
      - [Design Rule Check](#design-rule-check)
   - [Power Distribution Network and routing](#power-distribution-network-and-routing)
      - [Lab steps to build power distribution network](#lab-steps-to-build-power-distribution-network)
@@ -105,7 +105,7 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
      - [Basics of global and detail routing and configure TritonRoute](#basics-of-global-and-detail-routing-and-configure-tritonroute)
   - [TritonRoute Features](#tritonroute-features)
      - [TritonRoute feature 1 - Honors pre-processed route guides](#tritonroute-feature-1---honors-pre-processed-route-guides)
-     - [TritonRoute Feature2 & 3 - Inter-guide connectivity and intra- & inter-layer routing](#tritonroute-feature2--3---inter-guide-connectivity-and-intra--inter-layer-routing)
+     - [TritonRoute feature 2 & 3 - Inter-guide connectivity and intra- & inter-layer routing](#tritonroute-feature-2--3---inter-guide-connectivity-and-intra--inter-layer-routing)
      - [TritonRoute method to handle connectivity](#tritonroute-method-to-handle-connectivity)
      - [Routing topology algorithm and final files list post-route](#routing-topology-algorithm-and-final-files-list-post-route)
 - [References](#references)
@@ -894,12 +894,14 @@ After changing the code,type check drc in the tkcon window.
 Changed the file by adding the highlighted command
 <img src="./Images/243.png" />
 Made the structure.
+
 ### Lab challenge exercise to describe DRC error as geometrical construct
 <img src="./Images/245.png" />
 Changed the file again.
 <img src="./Images/246.png" />
 Made the structure.
 <img src="./Images/247.png" />
+
 ### Lab challenge to find missing or incorrect rules and fix them
 Now we will open the magic tool and execute the commands drc style drc(full) and drc check.
 <img src="./Images/248.png" />
@@ -1085,6 +1087,7 @@ Le us consider the following clock path.
 <img src="./Images/312.png" />
 <img src="./Images/313.png" />
 Then we will be considering the delay due to physcial wire and delay due to the buffer so ∆1 and ∆2 tells us that.
+
 ### Lab steps to analyze timing with real clocks using OpenSTA
 We will use openroad to use the following command to run the rest of the OpenFlow
 1. To load the created db file in Openroad <b>read_db pico_cts.db</b> 
@@ -1147,11 +1150,12 @@ Now we will follow the same commands we have used earlier to run OPENROAD,
 <img src="./Images/318.png" />
 <img src="./Images/319.png" />
  
-# Day 5 -Final step for RTL2GDS using tritinRoute and openSTA
+# Day 5 - Final step for RTL2GDS using tritonRoute and openSTA
 
 ## Routing and design rule check (DRC)
 
 ### Introduction to Maze Routing-Lee’s algorithm
+
 <p>
 <img src="./Images/320.png" />
 For this Layout, we will be doing Routing and DRC analysis.
@@ -1164,6 +1168,7 @@ In Lee's Algorithm, the whole Layout is divided into small grids, and numbers ar
 
 
 ### Lee’s Algorithm conclusion
+
 <p>
   For Source initially number 1 is given and the number increases for its horizontal and vertical neighbours but not diagonally.
 <p float = "left">
@@ -1182,6 +1187,7 @@ Similarly, we will consider different Flops this time.
 </p>
 
 ### Design Rule Check
+
 DRC stands for Design  Rule Check, and these are certain rules that need to be kept in mind when doing Physical Design, as these rules tell whether the design can be fabricated in foundry or not.
 <p float = "left">
   <img src="./Images/329.png" width ="500" />
@@ -1236,6 +1242,7 @@ Use the command run_routing in the OpenLane flow.
 ## TritonRoute Features
 
 ### TritonRoute feature 1 - Honors pre-processed route guides
+
 <img src="./Images/342.png" />
 In the Global route, the routing region is devided into the rectangular grids cells as shown in the figure above. And it is represented as cores 3D routing graph. Global route is done by FAST route engine.The detailed route is done by TritonRoute engine. A,B,C,D are four pins which we want to connect through routing. and this whole image of A,B,C,D shows the net.
 <b>Features of TritonRoute</b>
@@ -1252,15 +1259,19 @@ Bridging ensures that these pieces are connected logically and geometrically, of
 <li>It resolves potential routing discontinuities so that the detailed router doesn't misinterpret the layout as unconnected.</li>
 </ul>
 
-### TritonRoute Feature2 & 3 - Inter-guide connectivity and intra- & inter-layer routing
+### TritonRoute feature 2 & 3 - Inter-guide connectivity and intra- & inter-layer routing
+
 <img src="./Images/346.png" />
 <img src="./Images/347.png" />
+
 ### TritonRoute method to handle connectivity
+
 INPUTS:-LEF
 OUTPUTS:-detailed routing solution with optimized wire-length and via count
 CONSTRAINTS:-Route guide honouring, connectivity constraints, and design rules.
 <img src="./Images/348.png" />
 <img src="./Images/349.png" />
+
 ### Routing topology algorithm and final files list post-route  
 <img src="./Images/351.png" />
 The routing is done with zero Violation.
