@@ -2,7 +2,7 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
 ## Table of contents
 - [Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK](#day-1---inception-of-open-source-eda-openlane-and-sky130-pdk)
   - [How to talk to computers](#How-to-talk-to-computers)
-    - [Introduction to QFN-48 Package, chip, pads, core, die and IPs](#Introduction-to-QFN-48-Package,-chip,-pads,-core,-die-and-IPs)
+    - [Introduction to QFN-48 Package, chip, pads, core, die and IPs](#introduction-to-qfn-48-package-chip-pads-core-die-and-ips)
     - [Introduction to RISCV](#Introduction-to-RISCV)
     - [How Applications Run Inside Hardware (Laptop/Chip Level)](#How-Applications-Run-Inside-Hardware-(Laptop/Chip-Level))
   - [Soc design and OpenLANE](#Soc-design-and-OpenLANE)
