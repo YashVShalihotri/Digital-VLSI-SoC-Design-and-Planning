@@ -53,7 +53,7 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
   - [Formation of N-well and P-well](#formation-of-n-well-and-p-well)
   - [Formation of gate terminal](#formation-of-gate-terminal)
   - [Lightly doped drain LDD formation](#lightly-doped-drain-ldd-formation)
-  - [Source - drain formation](#source---drain-formation)
+  - [Source-Drain Formation](#source---drain-formation)
   - [Local interconnect formation](#local-interconnect-formation)
   - [Higher level metal formation](#higher-level-metal-formation)
   - [Lab introduction to Sky130 basic layers layout and LEF using inverter](#lab-introduction-to-sky130-basic-layers-layout-and-lef-using-inverter)
@@ -182,7 +182,7 @@ RTL Language implements the instructions, and it is called RTL Implementation of
 <img src="./Images/14.png" />
 
 ## Soc design and OpenLANE
-### 1. Introduction to all components of open-source digital ASIC design
+### Introduction to all components of open-source digital ASIC design
 <img src="./Images/16.png" />
 Digital ASIC Design Flow is made of three components:
 <ul>
@@ -219,7 +219,7 @@ These tools and technologies will be used in this project implementation.
 <img src="./Images/20.png" />
 Typical ASIC Design requires these many EDA tools processes for successful tape-out.
 
-### 2. Simplified RTL2GDS flow
+### Simplified RTL2GDS flow
 <img src="./Images/22.png" />
 The RTL to GSDII Flow has numerous steps that need to be performed to transition RTL-generated code to Tape-Out.
 The major steps involved are :
@@ -274,13 +274,13 @@ After all these steps the design is finally ready for sign-off where different c
 
 </ul>
 
-### 3. Introduction to OpenLANE and Strive chipsets
+### Introduction to OpenLANE and Strive chipsets
 OPENLANE is an automated RTL to GDSII flow that comprises several tools such as OpenROAD, Yosys, Magic, Netgen, Fault, CVC SPEF-Extractor, CU-GR, Klayout, etc. striVe is a family of open everything SoCs: Open PDK, Open EDA, Open RTL.<br>
 <img src="./Images/34.png"/>
 <b>striVe SoC Family </b>
 <img src="./Images/35.png"/>
 Different versions of striVe with each generation are better than the previous one.
-### 4. Introduction to OpenLANE detailed ASIC design flow
+### Introduction to OpenLANE detailed ASIC design flow
 <img src="./Images/37.png"/>
 OpenLANE ASIC design flow starts from RTL synthesis, which is done with <b>YoSys tool</b> and <b>abc for optimization</b>.
 <img src="./Images/36.png"/>
@@ -656,6 +656,7 @@ The output graph comes as :
 When we change the W/L ratio to 2.5 times for cmos 
 the graph gets shifted to right side.
 <img src="./Images/148.png"/>
+
 ### SPICE simulation lab for CMOS inverter
 
 ### Switching Threshold Vm
@@ -682,7 +683,7 @@ Open the magic tool with the following command <br>
 <b>magic -T sky130A.tech sky130A_inv.mag & </b>
 <img src="./Images/157.png"/>
 
-## Inception of layout ̂A CMOS fabrication process
+## Inception of layout CMOS fabrication process
 ### Create Active regions
 
 1. Selecting a Substrate: We are taking a p-type Silicon substrate with a 100 orientation.
@@ -730,7 +731,7 @@ Now, by creating the spacers, we can protect the actual structure remains consta
 Now, we do Plasma anisotropic etching. By that side-wall spacers are formed.
 <img src="./Images/184.png"/>
 
-### Source-drain formation
+### Source-Drain Formation
 Next step is deposite the very thin screen oxide layer to avoid the effect of channeling.
 <img src="./Images/185.png"/>
 Now to form the drain and source, again we do the ion implantation of arsenic at 75kev to create the N+ implant by using mask 9 in the P-well to form PMOS.
