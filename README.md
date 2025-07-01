@@ -1264,8 +1264,11 @@ CONSTRAINTS:-Route guide honouring, connectivity constraints, and design rules.
 <img src="./Images/351.png" />
 The routing is done with zero Violation.
 <img src="./Images/344.png" />
-We will go to SPEF_EXTRACTOR 
+We will go to SPEF_EXTRACTOR located in the directory.
+<img src="./Images/357.png" />
+
 <img src="./Images/352.png" />
+
 1. Take the LEF file
 2. Take the DEF file
 3. Plug it in the code
