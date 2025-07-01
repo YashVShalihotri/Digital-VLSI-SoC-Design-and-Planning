@@ -1,116 +1,115 @@
 Notes Summarized for the Workshop held between 18th June and 1st July 2025
-## Table of Content
+## Table of contents
 - [Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK](#day-1---inception-of-open-source-eda-openlane-and-sky130-pdk)
-  <b>How to talk to computers
-  1. Introduction to QFN-48 Package, chip, pads, core, die and IPs
-  2. Introduction to RISC-V
-  3. From Software Applications to Hardware
-  ### Soc design and OpenLANE
-  1. Introduction to all components of open-source digital asic design
-  2. Simplified RTL2GDS flow
-  3. Introduction to OpenLANE and Strive chipsets
-  4. Introduction to OpenLANE detailed ASIC design flow
-  ### Get familiar to open-source EDA tools
-  1. OpenLANE Directory structure in detail
-  2. Design Preparation Step
-  3. Review files after design prep and run synthesis
-  4. OpenLANE Project Git Link Description
-  5. Steps to characterize synthesis results
-- [Day 2 - Good floor planning considerations](#day-2---good-floor-planning-considerations)
-  ### Chip Floor planning consideration
-  1. Utilization factor and aspect ratio
-  2. Concept of pre-placed cells
-  3. De-coupling capacitors
-  4. Power planning
-  5. Pin placement and logical cell placement blockage
-  6. Steps to run floorplan using OpenLANE
-  7. Review floorplan files and steps to view floorplan/a>
-  8. Review floorplan layout in Magic
-  ### Library building and Placement
-  1. Netlist binding and initial place design
-  2. Optimize placement using estimated wire-length and capacitance
-  3. Final placement optimization
-  4. Need for libraries and characterization
-  5. Congestion aware placement using RePlAce
-  ### Cell design and characterization flows
-  1. Inputs for cell design flow
-  2. Circuit design steps
-  3. Layout design step
-  4. Typical characterization flow
-  ### General timing characterization parameters
-  1. Timing threshold definitions
-  2. Propagation delay and transition time
-[Day 3 - Design library cell using Magic Layout and ngspice characterization](#day-3---design-library-cell-using-magic-layout-and-ngspice-characterization)
-### Labs for CMOS inverter ngspice simulations
-1. IO placer revision
-2. SPICE deck creation for CMOS inverter
-3. SPICE simulation lab for CMOS inverter
-4. Switching Threshold Vm
-5. Static and dynamic simulation of CMOS inverter
-6. Lab steps to git clone vsdstdcelldesign
-### Inception of layout ̂A CMOS fabrication process
-1. Create Active regions
-2. Formation of N-well and P-well
-3. Formation of gate terminal
-4. Lightly doped drain (LDD) formation
-5. Source-drain formation
-6. Local interconnect formation
-7. Higher level metal formation
-8. Lab introduction to Sky130 basic layers layout and LEF using inverter
-9. Lab steps to create std cell layout and extract spice netlist
-### Sky130 Tech File Labs
-1. Lab steps to create final SPICE deck using Sky130 tech
-2. Lab steps to characterize inverter using sky130 model files
-3. Lab introduction to Magic tool options and DRC rules
-4. Lab introduction to Sky130 pdk's and steps to download labs
-5. Lab introduction to Magic and steps to load Sky130 tech-rules
-6. Lab exercise to fix poly.9 error in Sky130 tech-file
-7. Lab exercise to implement poly resistor spacing to diff and tap
-8. Lab challenge exercise to describe DRC error as geometrical construct
-9. Lab challenge to find missing or incorrect rules and fix them
-## Day 4 - Pre-layout timing analysis and importance of good clock tree
-### Timing modeling using delay tables
-1. Lab steps to convert grid info to track info
-2. Lab steps to convert magic layout to std cell LEF
-3. Introduction to timing libs and steps to include new cell in synthesis
-4. Introduction to delay tables
-5. Delay table usage Part 1
-6. Delay table usage Part 2
-7. Lab steps to configure synthesis settings to fix slack and include vsdinv
-### Timing analysis with ideal clocks using openSTA
-1. Setup timing analysis and introduction to flip-flop setup time
-2. Introduction to clock jitter and uncertainty
-3. Lab steps to configure OpenSTA for post-synth timing analysis
-4. Lab steps to optimize synthesis to reduce setup violations
-5. Lab steps to do basic timing ECO
-### Clock tree synthesis TritonCTS and signal integrity
-1. Clock tree routing and buffering using H-Tree algorithm
-2. Crosstalk and clock net shielding
-3. Lab steps to run CTS using TritonCTS
-4. Lab steps to verify CTS runs
-### Timing analysis with real clock using openSTA
-1. Setup timing analysis using real clocks
-2. Hold timing analysis using real clocks
-3. Lab steps to analyze timing with real clocks using OpenSTA
-4. Lab steps to execute OpenSTA with right timing libraries and CTS assignment
-5. Lab steps to observe impact of bigger CTS buffers on setup and hold timing
-## Day 5 -Final step for RTL2GDS using tritinRoute and openSTA
-### Routing and design rule check (DRC)
-1. Introduction to Maze Routing-Lee’s algorithm
-2. Lee’s Algorithm conclusion
-3. Design Rule Check
-### Power Distribution Network and routing
-1. Lab steps to build power distribution network
-2. Lab steps from power straps to std cell power
-3. Basics of global and detail routing and configure TritonRoute
-### TritonRoute Features
-1. TritonRoute feature 1 - Honors pre-processed route guides
-2. TritonRoute Feature2 & 3 - Inter-guide connectivity and intra- & inter-layer routing
-3. TritonRoute method to handle connectivity
-4. Routing topology algorithm and final files list post-route
-## References
-## Acknowledgement
-
+  - [How to talk to computers](#How-to-talk-to-computers)
+    - [Introduction to QFN-48 Package, chip, pads, core, die and IPs](#Introduction-to-QFN-48-Package,-chip,-pads,-core,-die-and-IPs)
+    - [Introduction to RISCV](#Introduction-to-RISCV)
+    - [How Applications Run Inside Hardware (Laptop/Chip Level)](#How-Applications-Run-Inside-Hardware-(Laptop/Chip-Level))
+  - [Soc design and OpenLANE](#Soc-design-and-OpenLANE)
+    - [Introduction to all components of open-source digital asic design](#Introduction-to-all-components-of-open-source-digital-asic-design)
+    - [Simplified RTL2GDS flow](#Simplified-RTL2GDS-flow)
+    - [Introduction to OpenLANE and Strive chipsets](#Introduction-to-OpenLANE-and-Strive-chipsets)
+    - [Introduction to OpenLANE detailed ASIC design flow](#Introduction-to-OpenLANE-detailed-ASIC-design-flow)
+  - [Get familiar to open-source EDA tools](#Get-familiar-to-open-source-EDA-tools)
+    - [OpenLANE Directory structure in detail](#OpenLANE-Directory-structure-in-detail)
+    - [Design Preparation Step](#Design-Preparation-Step)
+    - [Review files after design prep and run synthesis](#Review-files-after-design-prep-and-run-synthesis)
+    - [OpenLANE Project Git Link Description](#OpenLANE-Project-Git-Link-Description)
+    - [Steps to characterize synthesis results](#Steps-to-characterize-synthesis-results)
+- [Day 2 - Good floor planning considerations](#Day-2---Good-floor-planning-considerations)
+  - [Chip Floor planning consideration](#Chip-Floor-planning-consideration)
+    - [Utilization factor and aspect ratio](#Utilization-factor-and-aspect-ratio)
+    - [Concept of pre-placed cells](#Concept-of-pre-placed-cells)
+    - [De-coupling capacitors](#De-coupling-capacitors)
+    - [Power planning](#Power-planning)
+    - [Pin placement and logical cell placement blockage](#Pin-placement-and-logical-cell-placement-blockage)
+    - [Steps to run floorplan using OpenLANE](#Steps-to-run-floorplan-using-OpenLANE)
+    - [Review floorplan files and steps to view floorplan](#Review-floorplan-files-and-steps-to-view-floorplan)
+    - [Review floorplan layout in Magic](#Review-floorplan-layout-in-Magic)
+  - [Library building and Placement](#Library-building-and-Placement)
+    - [Netlist binding and initial place design](#Netlist-binding-and-initial-place-design)
+    - [Optimize placement using estimated wire-length and capacitance](#Optimize-placement-using-estimated-wire-length-and-capacitance)
+    - [Final placement optimization](#Final-placement-optimization)
+    - [Need for libraries and characterization](#Need-for-libraries-and-characterization)
+    - [Congestion aware placement using RePlAce](#Congestion-aware-placement-using-RePlAce)
+  - [Cell design and characterization flows](#Cell-design-and-characterization-flows)
+    - [Inputs for cell design flow](#Inputs-for-cell-design-flow)
+    - [Circuit design steps](#Circuit-design-steps)
+    - [Layout design step](#Layout-design-step)
+    - [Typical characterization flow](#Typical-characterization-flow)
+  - [General timing characterization parameters](#General-timing-characterization-parameters)
+    - [Timing threshold definitions](#Timing-threshold-definitions)
+    - [Propagation delay and transition time](#Propagation-delay-and-transition-time)
+- [Day 3 - Design library cell using Magic Layout and ngspice characterization](#Day-3---Design-library-cell-using-Magic-Layout-and-ngspice-characterization)
+  - [Labs for CMOS inverter ngspice simulations](#Labs-for-CMOS-inverter-ngspice-simulations)
+    - [IO placer revision](#IO-placer-revision)
+    - [SPICE deck creation for CMOS inverter](#SPICE-deck-creation-for-CMOS-inverter)
+    - [SPICE simulation lab for CMOS inverter](#SPICE-simulation-lab-for-CMOS-inverter)
+    - [Switching Threshold Vm](#Switching-Threshold-Vm)
+    - [Static and dynamic simulation of CMOS inverter](#Static-and-dynamic-simulation-of-CMOS-inverter)
+    - [Lab steps to git clone vsdstdcelldesign](#Lab-steps-to-git-clone-vsdstdcelldesign)
+  - [Inception of layout ̂CMOS fabrication process](#Inception-of-layout-CMOS-fabrication-process)
+    - [Create Active regions](#Create-Active-regions)
+    - [Formation of N-well and P-well](#Formation-of-N-well-and-P-well)
+    - [Formation of gate terminal](#Formation-of-gate-terminal)
+    - [Lightly doped drain (LDD) formation](#Lightly-doped-drain-(LDD)-formation)
+    - [Source - drain formation](#Source---drain-formation)
+    - [Local interconnect formation](#Local-interconnect-formation)
+    - [Higher level metal formation](#Higher-level-metal-formation)
+    - [Lab introduction to Sky130 basic layers layout and LEF using inverter](#Lab-introduction-to-Sky130-basic-layers-layout-and-LEF-using-inverter)
+    - [Lab steps to create std cell layout and extract spice netlist](#Lab-steps-to-create-std-cell-layout-and-extract-spice-netlist)
+  - [Sky130 Tech File Labs](#Sky130-Tech-File-Labs)
+    - [Lab steps to create final SPICE deck using Sky130 tech](#lab-steps-to-create-final-spice-deck-using-sky130-tech)
+    - [Lab steps to characterize inverter using sky130 model files](#lab-steps-to-characterize-inverter-using-sky130-model-files)
+    - [Lab introduction to Magic tool options and DRC rules](#lab-introduction-to-magic-tool-options-and-drc-rules)
+    - [Lab introduction to Sky130 pdk's and steps to download labs](#lab-introduction-to-sky130-pdks-and-steps-to-download-labs)
+    - [Lab introduction to Magic and steps to load Sky130 tech-rules](#lab-introduction-to-magic-and-steps-to-load-sky130-tech-rules)
+    - [Lab exercise to fix poly.9 error in Sky130 tech-file](#lab-exercise-to-fix-poly9-error-in-sky130-tech-file)
+    - [Lab exercise to implement poly resistor spacing to diff and tap](#lab-exercise-to-implement-poly-resistor-spacing-to-diff-and-tap)
+    - [Lab challenge exercise to describe DRC error as geometrical construct](#lab-challenge-exercise-to-describe-drc-error-as-geometrical-construct)
+    - [Lab challenge to find missing or incorrect rules and fix them](#lab-challenge-to-find-missing-or-incorrect-rules-and-fix-them)
+- [Day 4 - Pre-layout timing analysis and importance of good clock tree](#day-4---pre-layout-timing-analysis-and-importance-of-good-clock-tree)
+  - [Timing modeling using delay tables](#timing-modeling-using-delay-tables)
+    - [Lab steps to convert grid info to track info](#lab-steps-to-convert-grid-info-to-track-info)
+    - [Lab steps to convert magic layout to std cell LEF](#lab-steps-to-convert-magic-layout-to-std-cell-lef)
+    - [Introduction to timing libs and steps to include new cell in synthesis](#introduction-to-timing-libs-and-steps-to-include-new-cell-in-synthesis)
+    - [Introduction to delay tables](#introduction-to-delay-tables)
+    - [Delay table usage Part 1](#delay-table-usage-part-1)
+    - [Delay table usage Part 2](#delay-table-usage-part-2)
+    - [Lab steps to configure synthesis settings to fix slack and include vsdinv](#lab-steps-to-configure-synthesis-settings-to-fix-slack-and-include-vsdinv)
+  - [Timing analysis with ideal clocks using openSTA](#timing-analysis-with-ideal-clocks-using-opensta)
+     - [Setup timing analysis and introduction to flip-flop setup time](#setup-timing-analysis-and-introduction-to-flip-flop-setup-time)
+     - [Introduction to clock jitter and uncertainty](#introduction-to-clock-jitter-and-uncertainty)
+     - [Lab steps to configure OpenSTA for post-synth timing analysis](#lab-steps-to-configure-opensta-for-post-synth-timing-analysis)
+     - [Lab steps to optimize synthesis to reduce setup violations](#lab-steps-to-optimize-synthesis-to-reduce-setup-violations)
+     - [Lab steps to do basic timing ECO](#lab-steps-to-do-basic-timing-eco)
+  - [Clock tree synthesis TritonCTS and signal integrity](#clock-tree-synthesis-tritoncts-and-signal-integrity)
+     - [Clock tree routing and buffering using H-Tree algorithm](#clock-tree-routing-and-buffering-using-h-tree-algorithm)
+     - [Crosstalk and clock net shielding](#crosstalk-and-clock-net-shielding)
+     - [Lab steps to run CTS using TritonCTS](#lab-steps-to-run-cts-using-tritoncts)
+     - [Lab steps to verify CTS runs](#lab-steps-to-verify-cts-runs)
+  - [Timing analysis with real clock using openSTA](#timing-analysis-with-real-clock-using-opensta)
+     - [Setup timing analysis using real clocks](#setup-timing-analysis-using-real-clocks)
+     - [Hold timing analysis using real clocks](#hold-timing-analysis-using-real-clocks)
+     - [Lab steps to analyze timing with real clocks using OpenSTA](#lab-steps-to-analyze-timing-with-real-clocks-using-opensta)
+     - [Lab steps to execute OpenSTA with right timing libraries and CTS assignment](#lab-steps-to-execute-opensta-with-right-timing-libraries-and-cts-assignment)
+     - [Lab steps to observe impact of bigger CTS buffers on setup and hold timing](#lab-steps-to-observe-impact-of-bigger-cts-buffers-on-setup-and-hold-timing)
+- [Day 5 - Final step for RTL2GDS using tritinRoute and openSTA](#day-5---final-step-for-rtl2gds-using-tritinroute-and-opensta)
+  - [Routing and design rule check (DRC)](#routing-and-design-rule-check-drc)
+     - [Introduction to Maze Routing Lees algorithm](#introduction-to-maze-routing--lee-algorithm)
+     - [Lees Algorithm conclusion](#lees-algorithm-conclusion)
+     - [Design Rule Check](#design-rule-check)
+  - [Power Distribution Network and routing](#power-distribution-network-and-routing)
+     - [Lab steps to build power distribution network](#lab-steps-to-build-power-distribution-network)
+     - [Lab steps from power straps to std cell power](#lab-steps-from-power-straps-to-std-cell-power)
+     - [Basics of global and detail routing and configure TritonRoute](#basics-of-global-and-detail-routing-and-configure-tritonroute)
+  - [TritonRoute Features](#tritonroute-features)
+     - [TritonRoute feature 1 - Honors pre-processed route guides](#tritonroute-feature-1---honors-pre-processed-route-guides)
+     - [TritonRoute Feature2 & 3 - Inter-guide connectivity and intra- & inter-layer routing](#tritonroute-feature2--3---inter-guide-connectivity-and-intra--inter-layer-routing)
+     - [TritonRoute method to handle connectivity](#tritonroute-method-to-handle-connectivity)
+     - [Routing topology algorithm and final files list post-route](#routing-topology-algorithm-and-final-files-list-post-route)
+- [References](#references)
+- [Acknowledgement](#acknowledgement)
 # Day 1 - Inception of open-source EDA, OpenLANE and sky130 PDK
 ## How to talk to computers
 ### Introduction to QFN-48 Package, chip, pads, core, die and IPs
