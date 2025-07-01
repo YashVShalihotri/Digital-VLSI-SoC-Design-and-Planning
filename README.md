@@ -105,7 +105,7 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
      - [Basics of global and detail routing and configure TritonRoute](#basics-of-global-and-detail-routing-and-configure-tritonroute)
   - [TritonRoute Features](#tritonroute-features)
      - [TritonRoute feature 1 - Honors pre-processed route guides](#tritonroute-feature-1---honors-pre-processed-route-guides)
-     - [TritonRoute feature 2 & 3 - Inter-guide connectivity and intra- & inter-layer routing](#tritonroute-feature-2--3---inter-guide-connectivity-and-intra--inter-layer-routing)
+     - [TritonRoute feature 2 & 3 - Inter-guide connectivity and intra- & inter-layer routing](#tritonroute-feature-2-3---inter-guide-connectivity-and-intra--inter-layer-routing)
      - [TritonRoute method to handle connectivity](#tritonroute-method-to-handle-connectivity)
      - [Routing topology algorithm and final files list post-route](#routing-topology-algorithm-and-final-files-list-post-route)
 - [References](#references)
