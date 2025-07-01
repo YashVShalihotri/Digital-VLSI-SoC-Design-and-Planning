@@ -15,7 +15,7 @@ Notes Summarized for the Workshop held between 18th June and 1st July 2025
 3. Review files after design prep and run synthesis
 4. OpenLANE Project Git Link Description
 5. Steps to characterize synthesis results
-## Day 2 - Good floor planning considerations
+## [Day 2 - Good floor planning considerations](#day-2---good-floor-planning-considerations)
 ### Chip Floor planning consideration
 1. Utilization factor and aspect ratio
 2. Concept of pre-placed cells
